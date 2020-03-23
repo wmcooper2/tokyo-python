@@ -1,26 +1,38 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import Header from "./components/header";
+import SubNav from "./components/subnav";
+import MainContent from "./components/maincontent";
+import pageData from "./data";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
-function App() {
+import "./App.css";
+
+const App = () => {
+  const { javascript, regex, home } = pageData;
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <div className="App" id="border">
+        <Header />
+
+        <div className="maincontent">
+          <Switch>
+            <Route path="/javascript">
+              <SubNav {...javascript} />
+              <MainContent {...javascript} />
+            </Route>
+            <Route path="/regexes">
+              <SubNav {...regex} />
+              <MainContent {...regex} />
+            </Route>
+            <Route path="/">
+              <SubNav {...home} />
+              <MainContent {...home} />
+            </Route>
+          </Switch>
+        </div>
+      </div>
+    </Router>
   );
-}
+};
 
 export default App;
