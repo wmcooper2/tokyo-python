@@ -31,6 +31,8 @@ header ol {
 }
 
 .subnav {
+  display: flex;
+  flex-direction: column;
   min-width: 5vw;
   height: 100%;
   background-color: green;
@@ -46,5 +48,13 @@ header ol {
   flex-direction: row;
   height: 100%;
   width: 100%;
+  background-color: blue;
+}
+
+.topic-content {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
   background-color: blue;
 }

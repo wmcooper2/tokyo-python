@@ -1,35 +1,48 @@
 import React from "react";
-import Header from "./components/header";
-import SubNav from "./components/subnav";
 import MainContent from "./components/maincontent";
 import pageData from "./data";
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
-
+import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import "./App.css";
 
+const Logo = () => {
+  return <img id="logo" src="placeholder.jpeg" alt="Logo"></img>;
+};
+
+const Header = () => {
+  return (
+    <header>
+      <Logo />
+      <ol>
+        <Link to="/">Home</Link>
+      </ol>
+      <ol>
+        <Link to="/regex">Regexes</Link>
+      </ol>
+      <ol>
+        <Link to="/javascript">Javascript</Link>
+      </ol>
+    </header>
+  );
+};
+
 const App = () => {
-  const { javascript, regex, home } = pageData;
+  // console.log(pageData);
+  const { home, regex, javascript } = pageData;
   return (
     <Router>
       <div className="App" id="border">
         <Header />
-
-        <div className="maincontent">
-          <Switch>
-            <Route path="/javascript">
-              <SubNav {...javascript} />
-              <MainContent {...javascript} />
-            </Route>
-            <Route path="/regexes">
-              <SubNav {...regex} />
-              <MainContent {...regex} />
-            </Route>
-            <Route path="/">
-              <SubNav {...home} />
-              <MainContent {...home} />
-            </Route>
-          </Switch>
-        </div>
+        <Switch>
+          <Route path="/javascript">
+            <MainContent {...javascript} />
+          </Route>
+          <Route path="/regex">
+            <MainContent {...regex} />
+          </Route>
+          <Route path="/">
+            <MainContent {...home} />
+          </Route>
+        </Switch>
       </div>
     </Router>
   );
