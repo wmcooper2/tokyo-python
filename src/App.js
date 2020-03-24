@@ -9,25 +9,30 @@ const Logo = () => {
 };
 
 const Header = () => {
+  //navigation bar header
   return (
     <header>
-      <Logo />
-      <ol>
-        <Link to="/">Home</Link>
-      </ol>
-      <ol>
-        <Link to="/regex">Regexes</Link>
-      </ol>
-      <ol>
-        <Link to="/javascript">Javascript</Link>
-      </ol>
+      <nav>
+        <Logo />
+        <ol>
+          <Link to="/">Home</Link>
+        </ol>
+        <ol>
+          <Link to="/meetup">Meetup</Link>
+        </ol>
+        <ol>
+          <Link to="/regex">Regexes</Link>
+        </ol>
+        <ol>
+          <Link to="/javascript">Javascript</Link>
+        </ol>
+      </nav>
     </header>
   );
 };
 
 const App = () => {
-  // console.log(pageData);
-  const { home, regex, javascript } = pageData;
+  const { home, meetup, javascript, regex } = pageData;
   return (
     <Router>
       <div className="App" id="border">
@@ -38,6 +43,9 @@ const App = () => {
           </Route>
           <Route path="/regex">
             <MainContent {...regex} />
+          </Route>
+          <Route path="/meetup">
+            <MainContent {...meetup} />
           </Route>
           <Route path="/">
             <MainContent {...home} />

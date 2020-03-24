@@ -1,33 +1,51 @@
-// import React from "react";
+import React from "react";
+import HomeIndex from "./pages/homeindex";
+import AboutUs from "./pages/aboutus";
+
+//index is the home page for that topic, not the home page for the site
 const pageData = {
   home: {
     path: "home",
     title: "home nav",
     topics: {
-      home: "home",
-      "about-us": "about us",
-      "contact-us": "contact us"
+      "about-us": { name: "About", content: <AboutUs /> },
+      "contact-us": { name: "Contact", content: "contact us component" }
     },
-    content: "home content"
+    index: <HomeIndex />
   },
   regex: {
     path: "regex",
     title: "regex nav",
     topics: {
-      "how-to": "how to make",
-      explanation: "basic explanation",
-      examples: "regex examples"
+      "how-to": { name: "How to", content: "how to component" },
+      explanation: { name: "The basics", content: "basics component" },
+      examples: "Examples"
     },
-    content: "regex content"
+    index: "regex index"
+  },
+  meetup: {
+    path: "meetup",
+    title: "meetup nav",
+    topics: {
+      TPSC: { name: "Tokyo Python Society Club", content: "tpsc component" },
+      "Yahoo-Lodge": { name: "Yahoo Lodge", content: "yahoo lodge component" }
+    },
+    index: "meetup index"
   },
   javascript: {
     path: "javascript",
     title: "js nav",
     topics: {
-      "python-and-javascript": "Python and JavaScript",
-      "django-and-react": "Django and React"
+      "python-and-javascript": {
+        name: "Python and JavaScript",
+        content: "python and js component"
+      },
+      "django-and-react": {
+        name: "Django and React",
+        content: "django and react component"
+      }
     },
-    content: "js content"
+    index: "javascript index"
   }
 };
 

@@ -1,4 +1,11 @@
 @import "regex.css";
+@import "topiclist.css";
+
+:root {
+  --light-grey: rgba(0, 0, 0, 0.2);
+  --med-grey: rgba(0, 0, 0, 0.4);
+  --dark-grey: rgba(0, 0, 0, 0.6);
+}
 
 body {
   padding: 0;
@@ -11,18 +18,19 @@ body {
   height: 100vh;
 }
 
-header {
+nav {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
   min-height: 10vh;
   width: 100%;
-  background-color: red;
+  background-color: var(--light-grey);
 }
 
-header ol {
+nav ol {
   margin: 20px;
+  padding-left: 0px;
 }
 
 #logo {
@@ -30,25 +38,12 @@ header ol {
   height: 50px;
 }
 
-.subnav {
-  display: flex;
-  flex-direction: column;
-  min-width: 5vw;
-  height: 100%;
-  background-color: green;
-  transition-duration: 500ms;
-}
-
-.subnav:hover {
-  min-width: 15vw;
-}
-
+/* delete? */
 .maincontent {
   display: flex;
   flex-direction: row;
   height: 100%;
   width: 100%;
-  background-color: blue;
 }
 
 .topic-content {
@@ -56,5 +51,5 @@ header ol {
   width: 100%;
   display: flex;
   flex-direction: row;
-  background-color: blue;
+  background-color: var(--med-grey);
 }

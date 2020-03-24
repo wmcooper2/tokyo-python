@@ -3,37 +3,36 @@ import { Switch, Route, Link, useRouteMatch } from "react-router-dom";
 
 const MainContent = props => {
   let match = useRouteMatch();
-  console.log("match: ", match);
-  console.log(props);
-  const { topics } = props;
+  const { topics, index } = props;
 
   let topicLinks = [];
   let topicRoutes = [];
-
-  for (let [route, title] of Object.entries(topics)) {
-    // console.log(route);
-    let path = match.url === "/" ? route : `${match.url}/${route}`;
+  for (let [route, topic] of Object.entries(topics)) {
+    // base url adds extra slash... be careful
+    let path = match.url === "/" ? `/${route}` : `${match.url}/${route}`;
     topicLinks.push(
-      //   <Link key={route} to={`${match.url}/${route}`}>
       <Link key={route} to={path}>
-        <ol>{title}</ol>
+        <ol>{topic.name}</ol>
       </Link>
     );
     topicRoutes.push(
-
-    //   <Route key={route} path={`${match.url}/${route}`}>
       <Route key={route} path={path}>
-        <div className="topic-content">{title}</div>
+        {/* this is where the topic (the value in the object property) needs to be an actual component */}
+        <div className="topic-content">{topic.content}</div>
       </Route>
     );
   }
 
-  console.log("topicLinks: ", topicLinks);
-  console.log("topicRoutes: ", topicRoutes);
+  //after the loops make their routes, the last one needs to be the index page for that topic
+  topicRoutes.push(
+    <Route key="index" path={match.url}>
+      <div className="topic-content">{index}</div>
+    </Route>
+  );
 
   return (
     <div className="maincontent">
-      <div className="subnav">{topicLinks}</div>
+      <div className="topics-list">{topicLinks}</div>
       <Switch>{topicRoutes}</Switch>
     </div>
   );
