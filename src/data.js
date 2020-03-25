@@ -5,6 +5,10 @@ import MeetupIndex from "./pages/meetupindex";
 import Comparisons from "./pages/comparisonsindex";
 import About from "./pages/about";
 import SpecialSequences from "./pages/specialsequences";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faCoffee } from "@fortawesome/free-solid-svg-icons";
+
+const element = <FontAwesomeIcon icon={faCoffee} />;
 
 //index is the home page for that topic, not the home page for the site
 const pageData = {
