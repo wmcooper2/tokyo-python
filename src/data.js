@@ -1,6 +1,6 @@
 import React from "react";
 import HomeIndex from "./pages/homeindex";
-import AboutUs from "./pages/aboutus";
+import About from "./pages/about";
 import SpecialSequences from "./pages/specialsequences";
 
 //index is the home page for that topic, not the home page for the site
@@ -9,7 +9,7 @@ const pageData = {
     path: "home",
     title: "home nav",
     topics: {
-      "about-us": { name: "About", content: <AboutUs /> },
+      "about-us": { name: "About", content: <About /> },
       "contact-us": { name: "Contact", content: "contact us component" }
     },
     index: <HomeIndex />
