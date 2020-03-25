@@ -3,14 +3,20 @@ import { asciiData, specialSequences } from "./asciidata";
 
 const AsciiTable = props => {
   console.log("ascii props: ", props);
+  const { chars, handleMouseEnter, handleMouseLeave } = props;
   let list = asciiData.map((item, index) => (
     <span
       key={index}
       className="ascii-character"
-      onMouseEnter={() => props.handleMouseEnter(index)}
-      onMouseLeave={() => props.handleMouseLeave(index)}
+      onMouseEnter={() => handleMouseEnter(index)}
+      onMouseLeave={() => handleMouseLeave(index)}
+      style={
+        chars.includes(item.dec)
+          ? { backgroundColor: "lightgreen" }
+          : { backgroundColor: "transparent" }
+      }
     >
-      {item}
+      {item.char}
     </span>
   ));
   return list;
@@ -21,9 +27,9 @@ const Sequences = props => {
     <span
       key={index}
       className="sequence-button"
-      onClick={() => props.handleClick(item)}
+      onClick={() => props.handleClick(item.chars)}
     >
-      {item}
+      {item.seq}
     </span>
   ));
   return list;
@@ -34,7 +40,8 @@ class SpecialSequences extends React.Component {
     super(props);
     this.state = {
       selection: null,
-      details: { hex: "xxx", oct: "ooo", number: null }
+      details: { char: null, name: null, hex: null, dec: null },
+      chars: []
     };
     this.handleClick = this.handleClick.bind(this);
     this.handleMouseEnter = this.handleMouseEnter.bind(this);
@@ -42,14 +49,17 @@ class SpecialSequences extends React.Component {
   }
 
   handleClick = props => {
-    console.log(props);
+    console.log("handleClick, props: ", props);
+    this.setState(() => {
+      return {
+        chars: props
+      };
+    });
   };
 
   handleMouseEnter = props => {
     //change the details data
-    // console.log("entered: ", props);
-    let newDetails = this.state.details;
-    newDetails.number = props;
+    let newDetails = asciiData[props];
     this.setState(() => {
       return {
         details: newDetails
@@ -59,9 +69,7 @@ class SpecialSequences extends React.Component {
 
   handleMouseLeave = props => {
     //reset the details data
-    // console.log("left: ", props);
-    let newDetails = this.state.details;
-    newDetails.number = null;
+    let newDetails = { char: null, name: null, hex: null, dec: null };
     this.setState(() => {
       return {
         details: newDetails
@@ -70,6 +78,7 @@ class SpecialSequences extends React.Component {
   };
 
   render() {
+    let details = this.state.details;
     return (
       <React.Fragment>
         <div className="regex special-sequences">
@@ -77,11 +86,19 @@ class SpecialSequences extends React.Component {
             <AsciiTable
               handleMouseEnter={this.handleMouseEnter}
               handleMouseLeave={this.handleMouseLeave}
+              {...this.state}
             />
           </div>
-          <div className="character-details">{this.state.details.number}</div>
+          <div className="character-details">
+            <span className="details-name">Name</span>
+            <span className="details-hex">Hex</span>
+            <span className="details-dec">Dec</span>
+            <span className="details-name">{details.name}</span>
+            <span className="details-hex">{details.hex}</span>
+            <span className="details-dec">{details.dec}</span>
+          </div>
           <div className="sequence-buttons">
-            <Sequences handleClick={this.handleClick} />
+            <Sequences handleClick={this.handleClick} {...this.state} />
           </div>
         </div>
       </React.Fragment>
