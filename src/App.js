@@ -38,6 +38,13 @@ const App = () => {
     );
   }
 
+  //add the default path "/" for the home page
+  routes.push(
+    <Route key="home" path="/">
+      <TopicContent {...pageData["home"]} />
+    </Route>
+  );
+
   //main topic routes for header nav bar
   return (
     <Router>
