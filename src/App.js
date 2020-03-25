@@ -10,47 +10,40 @@ const Logo = () => {
 
 const Header = () => {
   //navigation bar header
+  let navLinks = [];
+  for (let [key, value] of Object.entries(pageData)) {
+    navLinks.push(
+      <ol key={key}>
+        <Link to={`/${value.path}`}>{value["nav-link"]}</Link>
+      </ol>
+    );
+  }
   return (
     <header>
       <nav>
         <Logo />
-        <ol>
-          <Link to="/">Home</Link>
-        </ol>
-        <ol>
-          <Link to="/meetup">Meetup</Link>
-        </ol>
-        <ol>
-          <Link to="/regex">Regexes</Link>
-        </ol>
-        <ol>
-          <Link to="/javascript">Javascript</Link>
-        </ol>
+        {navLinks}
       </nav>
     </header>
   );
 };
 
 const App = () => {
-  const { home, meetup, javascript, regex } = pageData;
+  let routes = [];
+  for (let key of Object.keys(pageData)) {
+    routes.push(
+      <Route key={key} path={`/${pageData[key].path}`}>
+        <TopicContent {...pageData[key]} />
+      </Route>
+    );
+  }
+
+  //main topic routes for header nav bar
   return (
     <Router>
       <div className="App" id="border">
         <Header />
-        <Switch>
-          <Route path="/javascript">
-            <TopicContent {...javascript} />
-          </Route>
-          <Route path="/regex">
-            <TopicContent {...regex} />
-          </Route>
-          <Route path="/meetup">
-            <TopicContent {...meetup} />
-          </Route>
-          <Route path="/">
-            <TopicContent {...home} />
-          </Route>
-        </Switch>
+        <Switch>{routes}</Switch>
       </div>
     </Router>
   );
