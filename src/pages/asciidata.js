@@ -128,4 +128,21 @@ const asciiData = [
   "~"
 ];
 
-export default asciiData;
+const specialSequences = [
+  "\\s",
+  "\\d",
+  "\\w",
+  "\\b",
+  "\\S",
+  "\\D",
+  "\\W",
+  "\\B",
+  "\\number",
+  "\\0",
+  "\\X",
+  "[\\b]",
+  "\\A",
+  "\\Z"
+];
+
+export { asciiData, specialSequences };
