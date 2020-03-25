@@ -1,3 +1,10 @@
+.full-topic-area {
+  display: flex;
+  flex-direction: row;
+  height: 100%;
+  width: 100%;
+}
+
 .topics-list {
   display: flex;
   flex-direction: column;
@@ -14,4 +21,9 @@
 .topics-list ol {
   padding-left: 1vw;
   padding-right: 1vw;
+}
+
+.content-area {
+  display: flex;
+  margin: 10vh auto;
 }

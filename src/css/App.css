@@ -1,5 +1,5 @@
 @import "regex.css";
-@import "topiclist.css";
+@import "topics.css";
 
 :root {
   --light-grey: rgba(0, 0, 0, 0.2);
@@ -36,20 +36,4 @@ nav ol {
 #logo {
   width: 50px;
   height: 50px;
-}
-
-/* delete? */
-.maincontent {
-  display: flex;
-  flex-direction: row;
-  height: 100%;
-  width: 100%;
-}
-
-.topic-content {
-  height: 100%;
-  width: 100%;
-  display: flex;
-  flex-direction: row;
-  background-color: var(--med-grey);
 }

@@ -1,8 +1,8 @@
 import React from "react";
-import MainContent from "./components/maincontent";
+import TopicContent from "./components/topiccontent";
 import pageData from "./data";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
-import "./App.css";
+import "./css/App.css";
 
 const Logo = () => {
   return <img id="logo" src="placeholder.jpeg" alt="Logo"></img>;
@@ -39,16 +39,16 @@ const App = () => {
         <Header />
         <Switch>
           <Route path="/javascript">
-            <MainContent {...javascript} />
+            <TopicContent {...javascript} />
           </Route>
           <Route path="/regex">
-            <MainContent {...regex} />
+            <TopicContent {...regex} />
           </Route>
           <Route path="/meetup">
-            <MainContent {...meetup} />
+            <TopicContent {...meetup} />
           </Route>
           <Route path="/">
-            <MainContent {...home} />
+            <TopicContent {...home} />
           </Route>
         </Switch>
       </div>

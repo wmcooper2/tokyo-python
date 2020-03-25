@@ -1,0 +1,39 @@
+.regex {
+  display: flex;
+  flex-direction: column;
+}
+.regex-special-sequences {
+  width: 100%;
+  height: 100%;
+}
+
+.regex-table {
+  display: grid;
+  grid-template-columns: repeat(16, 1fr);
+  border: 1px solid black;
+}
+
+.ascii-character {
+  text-align: center;
+  padding: 3px;
+}
+
+.ascii-character:hover {
+  background-color: lightgreen;
+}
+
+.sequence-buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  margin-top: 3vh;
+}
+
+.sequence-buttons span {
+  text-align: center;
+  padding: 6px;
+  background-color: var(--light-grey);
+}
+
+.sequence-buttons span:hover {
+  background-color: lightgreen;
+}

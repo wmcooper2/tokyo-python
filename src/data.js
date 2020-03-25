@@ -1,6 +1,7 @@
 import React from "react";
 import HomeIndex from "./pages/homeindex";
 import AboutUs from "./pages/aboutus";
+import SpecialSequences from "./pages/specialsequences";
 
 //index is the home page for that topic, not the home page for the site
 const pageData = {
@@ -19,7 +20,11 @@ const pageData = {
     topics: {
       "how-to": { name: "How to", content: "how to component" },
       explanation: { name: "The basics", content: "basics component" },
-      examples: "Examples"
+      "special-sequences": {
+        name: "Special Sequences",
+        content: <SpecialSequences/>
+      },
+      examples: { name: "Examples", content: "examples component" }
     },
     index: "regex index"
   },
