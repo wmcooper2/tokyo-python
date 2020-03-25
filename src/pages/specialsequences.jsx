@@ -11,9 +11,7 @@ const AsciiTable = props => {
       onMouseEnter={() => handleMouseEnter(index)}
       onMouseLeave={() => handleMouseLeave(index)}
       style={
-        chars.includes(item.dec)
-          ? { backgroundColor: "lightgreen" }
-          : { backgroundColor: "transparent" }
+        chars.includes(item.dec) ? { backgroundColor: "lightgreen" } : null
       }
     >
       {item.char}
@@ -89,16 +87,18 @@ class SpecialSequences extends React.Component {
               {...this.state}
             />
           </div>
-          <div className="character-details">
-            <span className="details-name">Name</span>
-            <span className="details-hex">Hex</span>
-            <span className="details-dec">Dec</span>
-            <span className="details-name">{details.name}</span>
-            <span className="details-hex">{details.hex}</span>
-            <span className="details-dec">{details.dec}</span>
-          </div>
-          <div className="sequence-buttons">
-            <Sequences handleClick={this.handleClick} {...this.state} />
+          <div className="regex-controls">
+            <div className="sequence-buttons">
+              <Sequences handleClick={this.handleClick} {...this.state} />
+            </div>
+            <div className="character-details">
+              <span className="details-name">Name</span>
+              <span className="details-hex">Hex</span>
+              <span className="details-dec">Dec</span>
+              <span className="details-name">{details.name}</span>
+              <span className="details-hex">{details.hex}</span>
+              <span className="details-dec">{details.dec}</span>
+            </div>
           </div>
         </div>
       </React.Fragment>
