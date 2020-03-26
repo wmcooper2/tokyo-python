@@ -13,8 +13,13 @@
   height: 100%;
   background-color: var(--dark-grey);
   transition-duration: 500ms;
-  margin: 0px 0px;
-  padding: 0px 0px;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+
+/* doesn't push the last item down for me */
+.topics-list:last-child {
 }
 
 .topics-list:hover {
@@ -23,10 +28,44 @@
 
 .topics-list ul {
   list-style-type: none;
-  padding-left: 1rem;
-  padding-right: 1rem;
+  padding-left: 0;
+  padding-right: 0;
   display: flex;
   flex-direction: column;
+}
+
+.topic-link li {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem;
+  transition: background-color 200ms;
+}
+
+.topic-link:hover li {
+  background-color: mediumseagreen;
+}
+
+svg {
+  color: black;
+}
+
+.topic-text {
+  display: none;
+  word-wrap: none;
+}
+
+.topics-list:hover .topic-text {
+  display: block;
+}
+
+.main-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  margin: auto auto;
 }
 
 .content-area {

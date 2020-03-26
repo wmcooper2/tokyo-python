@@ -1,12 +1,12 @@
 import React from "react";
 
-const RegexIndex = props => {
+const RegexPage = props => {
   return (
     <div className="index-page">
-      <h1>Regex Index</h1>
+      <h1>Regex Page</h1>
       <p>Regular expressions are awesome.</p>
     </div>
   );
 };
 
-export default RegexIndex;
+export default RegexPage;

@@ -20,7 +20,7 @@ const AsciiTable = props => {
   return list;
 };
 
-const Sequences = props => {
+const SequenceButtons = props => {
   let list = specialSequences.map((item, index) => (
     <span
       key={index}
@@ -33,7 +33,7 @@ const Sequences = props => {
   return list;
 };
 
-class SpecialSequences extends React.Component {
+class Sequences extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -79,25 +79,31 @@ class SpecialSequences extends React.Component {
     let details = this.state.details;
     return (
       <React.Fragment>
-        <div className="regex special-sequences">
-          <div className="regex-table">
-            <AsciiTable
-              handleMouseEnter={this.handleMouseEnter}
-              handleMouseLeave={this.handleMouseLeave}
-              {...this.state}
-            />
-          </div>
-          <div className="regex-controls">
-            <div className="sequence-buttons">
-              <Sequences handleClick={this.handleClick} {...this.state} />
+        <div className="main-content">
+          <h1>Special Sequences</h1>
+          <div className="regex special-sequences">
+            <div className="regex-table">
+              <AsciiTable
+                handleMouseEnter={this.handleMouseEnter}
+                handleMouseLeave={this.handleMouseLeave}
+                {...this.state}
+              />
             </div>
-            <div className="character-details">
-              <span className="details-name">Name</span>
-              <span className="details-hex">Hex</span>
-              <span className="details-dec">Dec</span>
-              <span className="details-name">{details.name}</span>
-              <span className="details-hex">{details.hex}</span>
-              <span className="details-dec">{details.dec}</span>
+            <div className="regex-controls">
+              <div className="sequence-buttons">
+                <SequenceButtons
+                  handleClick={this.handleClick}
+                  {...this.state}
+                />
+              </div>
+              <div className="character-details">
+                <span className="details-name">Name</span>
+                <span className="details-hex">Hex</span>
+                <span className="details-dec">Dec</span>
+                <span className="details-name">{details.name}</span>
+                <span className="details-hex">{details.hex}</span>
+                <span className="details-dec">{details.dec}</span>
+              </div>
             </div>
           </div>
         </div>
@@ -106,4 +112,4 @@ class SpecialSequences extends React.Component {
   }
 }
 
-export default SpecialSequences;
+export default Sequences;

@@ -10,6 +10,7 @@
 
   --topic-nav-min-width: 4rem;
   --topic-nav-max-width: 10rem;
+  --link-color: rgba(0, 0, 0, 1);
 }
 
 body {
@@ -21,6 +22,11 @@ body {
   display: flex;
   flex-direction: column;
   height: 100vh;
+}
+
+a {
+  text-decoration: none;
+  color: var(--link-color);
 }
 
 nav {
@@ -47,4 +53,5 @@ nav ol {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin: auto auto;
 }
