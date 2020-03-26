@@ -1,0 +1,17 @@
+.example {
+  width: 80%;
+}
+
+.method-description {
+  width: 80%;
+}
+
+.basic-use {
+}
+
+.full-use {
+}
+
+.documentation-link {
+  background-color: var(--light-grey);
+}
