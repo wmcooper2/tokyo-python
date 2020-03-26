@@ -2,9 +2,14 @@
 @import "topics.css";
 
 :root {
+  font-size: 16px;
+  font-family: "Open Sans";
   --light-grey: rgba(0, 0, 0, 0.2);
   --med-grey: rgba(0, 0, 0, 0.4);
   --dark-grey: rgba(0, 0, 0, 0.6);
+
+  --topic-nav-min-width: 4rem;
+  --topic-nav-max-width: 10rem;
 }
 
 body {
@@ -23,7 +28,6 @@ nav {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  min-height: 10vh;
   width: 100%;
   background-color: var(--light-grey);
 }

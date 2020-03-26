@@ -8,22 +8,28 @@
 .topics-list {
   display: flex;
   flex-direction: column;
-  width: 10vw;
+  position: fixed;
+  width: var(--topic-nav-min-width);
   height: 100%;
   background-color: var(--dark-grey);
   transition-duration: 500ms;
+  margin: 0px 0px;
+  padding: 0px 0px;
 }
 
 .topics-list:hover {
-  width: 20vw;
+  width: var(--topic-nav-max-width);
 }
 
-.topics-list ol {
-  padding-left: 1vw;
-  padding-right: 1vw;
+.topics-list ul {
+  list-style-type: none;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  display: flex;
+  flex-direction: column;
 }
 
 .content-area {
   display: flex;
-  margin: 10vh auto;
+  margin-left: var(--topic-nav-max-width);
 }

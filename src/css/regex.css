@@ -12,6 +12,7 @@
   display: grid;
   grid-template-columns: repeat(16, 1fr);
   border: 1px solid black;
+  max-height: 30rem;
 }
 
 .regex-controls {
@@ -24,7 +25,7 @@
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  font-size: 2rem;
+  font-size: 130%;
   text-align: center;
   padding: 3px;
 }

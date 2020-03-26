@@ -11,7 +11,7 @@ const TopicContent = props => {
     let path = match.url === "/" ? `/${route}` : `${match.url}/${route}`;
     topicLinks.push(
       <Link key={route} to={path}>
-        <ol>{topic.name}</ol>
+        <li>{topic.icon}<span>{topic.name}</span></li>
       </Link>
     );
     topicRoutes.push(
@@ -31,7 +31,9 @@ const TopicContent = props => {
 
   return (
     <div className="full-topic-area">
-      <div className="topics-list">{topicLinks}</div>
+      <div className="topics-list">
+        <ul>{topicLinks}</ul>
+      </div>
       <Switch>{topicRoutes}</Switch>
     </div>
   );

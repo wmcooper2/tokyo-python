@@ -9,7 +9,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faMeetup,
   faYahoo,
-  faPython,
+  // faPython,
   faJsSquare,
   faReact
 } from "@fortawesome/free-brands-svg-icons";
@@ -21,8 +21,12 @@ import {
   faBalanceScale,
   faDiceTwo,
   faDiceThree,
-  faPlusSquare,
-  faTerminal
+  // faPlusSquare,
+  faTerminal,
+  faHandshake,
+  faTools,
+  faFileWord,
+  faPalette
 } from "@fortawesome/free-solid-svg-icons";
 
 const homeIcon = <FontAwesomeIcon icon={faHome} size="2x" />;
@@ -37,8 +41,12 @@ const python2Icon = <FontAwesomeIcon icon={faDiceTwo} size="2x" />;
 const python3Icon = <FontAwesomeIcon icon={faDiceThree} size="2x" />;
 const javaScriptIcon = <FontAwesomeIcon icon={faJsSquare} size="2x" />;
 const reactIcon = <FontAwesomeIcon icon={faReact} size="2x" />;
-const plusIcon = <FontAwesomeIcon icon={faPlusSquare} size="2x" />;
+// const plusIcon = <FontAwesomeIcon icon={faPlusSquare} size="2x" />;
 const regexIcon = <FontAwesomeIcon icon={faTerminal} size="2x" />;
+const tpscIcon = <FontAwesomeIcon icon={faHandshake} size="2x" />;
+const basicsIcon = <FontAwesomeIcon icon={faTools} size="2x" />;
+const specialSequencesIcon = <FontAwesomeIcon icon={faFileWord} size="2x" />;
+const examplesIcon = <FontAwesomeIcon icon={faPalette} size="2x" />;
 
 //index is the home page for that topic, not the home page for the site
 const pageData = {
@@ -46,10 +54,11 @@ const pageData = {
     path: "home",
     "nav-link": homeIcon,
     topics: {
-      "about-us": { name: aboutIcon, content: <About /> },
+      "about-us": { name: "about", content: <About />, icon: aboutIcon },
       "contact-us": {
-        name: contactIcon,
-        content: "contact us component"
+        name: "contact",
+        content: "contact us component",
+        icon: contactIcon
       }
     },
     index: <HomeIndex />
@@ -59,13 +68,26 @@ const pageData = {
     path: "regex",
     "nav-link": regexIcon,
     topics: {
-      "how-to": { name: howToIcon, content: "how to component" },
-      explanation: { name: "The basics", content: "basics component" },
-      "special-sequences": {
-        name: "Special Sequences",
-        content: <SpecialSequences />
+      "how-to": {
+        name: "how to",
+        content: "how to component",
+        icon: howToIcon
       },
-      examples: { name: "Examples", content: "examples component" }
+      explanation: {
+        name: "basics",
+        content: "basics component",
+        icon: basicsIcon
+      },
+      "special-sequences": {
+        name: "special sequences",
+        content: <SpecialSequences />,
+        icon: specialSequencesIcon
+      },
+      examples: {
+        name: "examples",
+        content: "examples component",
+        icon: examplesIcon
+      }
     },
     index: <RegexIndex />
   },
@@ -74,9 +96,13 @@ const pageData = {
     path: "meetup",
     "nav-link": meetupIcon,
     topics: {
-      TPSC: { name: "Tokyo Python Society Club", content: "tpsc component" },
+      TPSC: {
+        name: "TPSC",
+        content: "Tokyo Python Society Club component",
+        icon: tpscIcon
+      },
       "Yahoo-Lodge": {
-        name: "Yahoo Lodge",
+        name: "yahoo lodge",
         content: "yahoo lodge component",
         icon: yahooIcon
       }
@@ -89,22 +115,24 @@ const pageData = {
     "nav-link": comparisonIcon,
     topics: {
       "python-and-javascript": {
-        name: javaScriptIcon,
-        content: "python and javascript component"
+        name: "javascript",
+        content: "python and javascript component",
+        icon: javaScriptIcon
       },
       react: {
-        name: reactIcon,
-        content: "django and react component"
+        name: "react.js",
+        content: "django and react component",
+        icon: reactIcon
       },
       "python-2-and-3": {
-        name: (
+        name: "2 vs 3",
+        content: "Python 2 and 3 comparison component",
+        icon: (
           <div>
             {python2Icon}
-            {plusIcon}
             {python3Icon}
           </div>
-        ),
-        content: "Python 2 and 3 comparison component"
+        )
       }
     },
     index: <Comparisons />
