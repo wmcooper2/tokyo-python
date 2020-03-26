@@ -10,7 +10,6 @@
 
 # production
 /build
-/tokyo-python*
 
 # misc
 .DS_Store
