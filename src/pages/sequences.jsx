@@ -79,7 +79,8 @@ class Sequences extends React.Component {
     let details = this.state.details;
     return (
       <React.Fragment>
-        <div className="main-content">
+        {/* <div className="main-content"> */}
+        <div className="index-page">
           <h1>Special Sequences</h1>
           <div className="regex special-sequences">
             <div className="regex-table">

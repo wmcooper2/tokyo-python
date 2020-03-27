@@ -3,7 +3,7 @@ import About from "./pages/about";
 import BasicsPage from "./pages/basics";
 import ComparisonsPage from "./pages/comparisons";
 import ContactPage from "./pages/contact";
-import ExamplesPage from "./pages/regexexamples";
+import ExamplesPage from "./pages/examples";
 import HomePage from "./pages/home";
 import HowToPage from "./pages/howto";
 import JavascriptPage from "./pages/javascript";

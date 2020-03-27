@@ -6,7 +6,7 @@ const docs = {
   search: "https://docs.python.org/3/library/re.html?highlight=re#re.search"
 };
 
-const examples = {
+const regexObjects = {
   compile: {
     description:
       "'compile' returns a compiled regular expression object. It is the foundation of Python's regex module. Flags passed to it are separated with a bar.",
@@ -101,7 +101,7 @@ const examples = {
   }
 };
 
-export default examples;
+export default regexObjects;
 //examples object keys are the main points in the documentation like
 // re.compile becomes "compile" and is a key in the examples object
 
