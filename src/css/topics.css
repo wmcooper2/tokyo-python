@@ -23,11 +23,10 @@
 }
 
 .topic-link {
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
+  /* display: flex; */
+  /* flex-direction: row; */
+  /* justify-content: space-between; */
   list-style-type: none;
-  margin: 0 0;
   padding: 10px 0;
   color: black;
 }
@@ -38,6 +37,7 @@
 
 .topics-nav:hover .topic-text {
   display: inline;
+  margin-right: 0px;
 }
 
 .content-area {

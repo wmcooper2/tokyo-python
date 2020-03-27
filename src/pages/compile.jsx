@@ -6,22 +6,18 @@ const compileMethod = {
   "basic-use": "re.compile(pattern)",
   "full-use": "re.compile(pattern, flags=0)",
   "return-value": "re.compile(pattern)",
+  text: null,
+  pattern: "birds",
   examples: {
     1: {
-      text: null,
-      pattern: "birds",
       reg: "re.compile(pattern)",
       result: "re.compile('birds')"
     },
     2: {
-      text: null,
-      pattern: "birds",
       reg: "re.compile(pattern, re.A)",
       result: "re.compile('birds', re.ASCII)"
     },
     3: {
-      text: null,
-      pattern: "birds",
       reg: "re.compile(pattern, re.A|re.I)",
       result: "re.compile('birds', re.IGNORECASE|re.ASCII)"
     }
@@ -54,7 +50,7 @@ const ArgsTable = props => {
   );
 };
 
-const MethodTable = props => {
+const ExampleTable = props => {
   const { index, value } = props;
   return (
     <table className="method-table">
@@ -65,25 +61,13 @@ const MethodTable = props => {
       </thead>
       <tbody>
         <tr>
-          <td>Text:</td>
-          <td>
-            <code className="regex-text">{value.text}</code>
-          </td>
-        </tr>
-        <tr>
-          <td>Pattern:</td>
-          <td>
-            <code className="regex-pattern">{value.pattern}</code>
-          </td>
-        </tr>
-        <tr>
-          <td>Regex:</td>
+          <td className="cell-label">Regex:</td>
           <td>
             <code className="regex-code">{value.reg}</code>
           </td>
         </tr>
         <tr>
-          <td>Result:</td>
+          <td className="cell-label">Result:</td>
           <td>
             <code className="regex-result">{value.result}</code>
           </td>
@@ -93,18 +77,49 @@ const MethodTable = props => {
   );
 };
 
-const CompilePage = () => {
+const Examples = () => {
   const examples = [];
   for (let [key, value] of Object.entries(compileMethod.examples)) {
-    examples.push(<MethodTable key={key} index={key} value={value} />);
+    examples.push(<ExampleTable key={key} index={key} value={value} />);
   }
+  return examples;
+};
 
+const TextPatternTable = props => {
+  console.log("TPT: ", props);
+  return (
+    <table className="text-pattern-table">
+      <thead>
+        <tr>
+          <th className="cell-label">Text</th>
+          <th className="cell-label">Pattern</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>
+            <code className="regex-text">{props.text}</code>
+          </td>
+          <td>
+            <code className="regex-pattern">{props.pattern}</code>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  );
+};
+
+const CompilePage = () => {
   return (
     <div className="topic-page">
       <h1>Compile Page</h1>
       <p>{compileMethod.description}</p>
       <ArgsTable {...compileMethod} />
-      {examples}
+      <TextPatternTable
+        text={compileMethod.text}
+        pattern={compileMethod.pattern}
+      />
+      <Examples />
     </div>
   );
 };

@@ -10,12 +10,12 @@ const TopicContent = props => {
     // base url adds extra slash... be careful
     let path = match.url === "/" ? `/${route}` : `${match.url}/${route}`;
     topicLinks.push(
-      <Link to={path} key={route} className="topic-link">
-        <li>
+        <Link to={path} key={route} className="topic-link">
+      <li>
           {topic.icon}
           <span className="topic-text">{topic.name}</span>
-        </li>
-      </Link>
+      </li>
+        </Link>
     );
     topicRoutes.push(
       <Route key={route} path={path}>

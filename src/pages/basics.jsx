@@ -8,7 +8,7 @@ const RegexObject = props => {
     const exampleIndex = item[0];
     const example = item[1];
     examples.push(
-      <table key={exampleIndex} className="method-example">
+      <table key={exampleIndex} className="method-table">
         <thead>
           <tr>
             <th>Ex {exampleIndex}</th>
@@ -16,25 +16,25 @@ const RegexObject = props => {
         </thead>
         <tbody>
           <tr>
-            <td>Text:</td>
+            <td className="cell-label">Text:</td>
             <td>
               <code className="regex-text">{example.text}</code>
             </td>
           </tr>
           <tr>
-            <td>Pattern:</td>
+            <td className="cell-label">Pattern:</td>
             <td>
               <code className="regex-pattern">{example.pattern}</code>
             </td>
           </tr>
           <tr>
-            <td>Regex:</td>
+            <td className="cell-label">Regex:</td>
             <td>
               <code className="regex-code">{example.reg}</code>
             </td>
           </tr>
           <tr>
-            <td>Result:</td>
+            <td className="cell-label">Result:</td>
             <td>
               <code className="regex-result">{example.result}</code>
             </td>

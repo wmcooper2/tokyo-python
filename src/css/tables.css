@@ -1,6 +1,25 @@
 .args-table,
 .method-table {
   text-align: left;
+  margin: 1vh 0;
+}
+
+.text-pattern-table {
+  text-align: left;
+  width: 30%;
+}
+
+th {
+  text-align: left;
+}
+
+td {
+  padding: 0px 6px;
+  text-align: left;
+}
+
+td.cell-label {
+  width: 5vw;
 }
 
 .regex-table {

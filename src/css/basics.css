@@ -16,16 +16,3 @@
   max-width: 15vw;
   padding: 0px;
 }
-
-th {
-  text-align: left;
-}
-
-td {
-  padding: 0px 6px;
-}
-
-.method-example {
-  margin: 3vh 0;
-  background-color: lightblue;
-}
