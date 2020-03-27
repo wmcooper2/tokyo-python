@@ -8,12 +8,32 @@ const docs = {
 
 const examples = {
   compile: {
-    description: "blank",
-    "basic-use": null,
-    "full-use": null,
-    "return-value": null,
+    description:
+      "'compile' returns a compiled regular expression object. It is the foundation of Python's regex module. Flags passed to it are separated with a bar.",
+    "basic-use": "re.compile(pattern)",
+    "full-use": "re.compile(pattern, flags=0)",
+    "return-value": "re.compile(pattern)",
     documentation: docs.compile,
-    examples: null
+    examples: {
+      1: {
+        text: null,
+        pattern: "birds",
+        reg: "re.compile(pattern)",
+        result: "re.compile('birds')"
+      },
+      2: {
+        text: null,
+        pattern: "birds",
+        reg: "re.compile(pattern, re.A)",
+        result: "re.compile('birds', re.ASCII)"
+      },
+      3: {
+        text: null,
+        pattern: "birds",
+        reg: "re.compile(pattern, re.A|re.I)",
+        result: "re.compile('birds', re.IGNORECASE|re.ASCII)"
+      }
+    }
   },
 
   match: {
@@ -85,8 +105,22 @@ export default examples;
 //examples object keys are the main points in the documentation like
 // re.compile becomes "compile" and is a key in the examples object
 
-// Example:
+// Template:
 // const examples = {
-//   match: "pattern.match(text) does blah blah...",
+//   method: {
+// description: String,
+// "basic-use": String,
+// "full-use": String,
+// "return-value": String,
+// documentation: var -> String,
+// examples: {
+// 1 {
+// text: String,
+// pattern: String,
+// reg: String,
+// result: String,
+//}
+
+// }
 //   search: "pattern.search(text) does blah blah too, but also blah blah"
 // };
