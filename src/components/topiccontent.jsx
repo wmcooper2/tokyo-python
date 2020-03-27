@@ -10,7 +10,7 @@ const TopicContent = props => {
     // base url adds extra slash... be careful
     let path = match.url === "/" ? `/${route}` : `${match.url}/${route}`;
     topicLinks.push(
-      <Link className="topic-link" key={route} to={path}>
+      <Link to={path} key={route} className="topic-link">
         <li>
           {topic.icon}
           <span className="topic-text">{topic.name}</span>
@@ -19,7 +19,6 @@ const TopicContent = props => {
     );
     topicRoutes.push(
       <Route key={route} path={path}>
-        {/* topic.content can be an actual component */}
         {topic.page}
       </Route>
     );
@@ -33,12 +32,10 @@ const TopicContent = props => {
   );
 
   return (
-    <div className="full-topic-area">
-      <div className="topics-list">
-        <ul>{topicLinks}</ul>
-      </div>
+    <React.Fragment>
+      <div className="topics-nav">{topicLinks}</div>
       <Switch>{topicRoutes}</Switch>
-    </div>
+    </React.Fragment>
   );
 };
 

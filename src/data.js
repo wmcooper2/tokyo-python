@@ -2,6 +2,7 @@ import React from "react";
 import About from "./pages/about";
 import BasicsPage from "./pages/basics";
 import ComparisonsPage from "./pages/comparisons";
+import CompilePage from "./pages/compile";
 import ContactPage from "./pages/contact";
 import ExamplesPage from "./pages/examples";
 import HomePage from "./pages/home";
@@ -11,10 +12,12 @@ import MeetupPage from "./pages/meetup";
 import Python23Page from "./pages/python23";
 import ReactPage from "./pages/react";
 import RegexPage from "./pages/regex";
+import RePage from "./pages/re";
 import Sequences from "./pages/sequences";
 import TPSCPage from "./pages/tpsc";
 import YahooLodgePage from "./pages/yahoolodge";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+
 import {
   faMeetup,
   faYahoo,
@@ -86,7 +89,7 @@ const pageData = {
         page: <HowToPage />,
         icon: howToIcon
       },
-      explanation: {
+      basics: {
         name: "basics",
         page: <BasicsPage />,
         icon: basicsIcon
@@ -100,6 +103,26 @@ const pageData = {
         name: "examples",
         page: <ExamplesPage />,
         icon: examplesIcon
+      },
+      re: {
+        name: "re",
+        page: <RePage />,
+        icon: "R"
+      },
+      compile: {
+        name: "compile",
+        page: <CompilePage />,
+        icon: "C"
+      },
+      pattern: {
+        name: "pattern",
+        page: null,
+        icon: "P"
+      },
+      match: {
+        name: "match",
+        page: null,
+        icon: "M"
       }
     },
     index: <RegexPage />

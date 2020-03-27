@@ -2,12 +2,12 @@ import React from "react";
 
 const RegexPage = props => {
   return (
-    <div className="index-page">
+    <div className="topic-page">
       <h1>Regex Page</h1>
       <p>Regular expressions are awesome.</p>
       <p>
-        In Python's <code>re</code> module, there are 4 major points that I
-        think you should be careful not to confuse;
+        In Python's <code>re</code> module, there are 4 major points that you
+        should be careful not to confuse;
       </p>
       <ul>
         <li>

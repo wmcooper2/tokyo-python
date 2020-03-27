@@ -2,7 +2,7 @@ import React from "react";
 
 const HowTo = () => {
   return (
-    <div className="index-page">
+    <div className="topic-page">
       <h1>How To Page</h1>
       <p>
         How to make a regular expression is a very difficult thing to answer. I

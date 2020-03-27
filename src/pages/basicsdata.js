@@ -15,7 +15,7 @@ const regexObjects = {
   },
   compile: {
     description:
-      "The 'compile' method is the foundation of Python's regex module. Flags passed to it are separated with a bar. You can save the object returned by re.compile() into a variable, then it is a 'pattern' object that can be reused later.",
+      "The 'compile' method is the foundation of Python's regex module. You can save the object returned by re.compile() into a variable, then it is a 'pattern' object that can be reused later.",
     args: true,
     "basic-use": "re.compile(pattern)",
     "full-use": "re.compile(pattern, flags=0)",
