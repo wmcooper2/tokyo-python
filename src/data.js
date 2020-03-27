@@ -3,7 +3,7 @@ import About from "./pages/about";
 import BasicsPage from "./pages/basics";
 import ComparisonsPage from "./pages/comparisons";
 import ContactPage from "./pages/contact";
-import ExamplesPage from "./pages/examples";
+import ExamplesPage from "./pages/regexexamples";
 import HomePage from "./pages/home";
 import HowToPage from "./pages/howto";
 import JavascriptPage from "./pages/javascript";
@@ -38,24 +38,24 @@ import {
   faPalette
 } from "@fortawesome/free-solid-svg-icons";
 
-const homeIcon = <FontAwesomeIcon icon={faHome} size="2x" />;
-const meetupIcon = <FontAwesomeIcon icon={faMeetup} size="2x" />;
-const yahooIcon = <FontAwesomeIcon icon={faYahoo} size="2x" />;
-const contactIcon = <FontAwesomeIcon icon={faEnvelope} size="2x" />;
-const aboutIcon = <FontAwesomeIcon icon={faAddressCard} size="2x" />;
-const howToIcon = <FontAwesomeIcon icon={faChalkboardTeacher} size="2x" />;
-const comparisonIcon = <FontAwesomeIcon icon={faBalanceScale} size="2x" />;
-const pythonIcon = <FontAwesomeIcon icon={faPython} size="2x" />;
-// const python2Icon = <FontAwesomeIcon icon={faDiceTwo} size="2x" />;
-// const python3Icon = <FontAwesomeIcon icon={faDiceThree} size="2x" />;
-const javaScriptIcon = <FontAwesomeIcon icon={faJsSquare} size="2x" />;
-const reactIcon = <FontAwesomeIcon icon={faReact} size="2x" />;
-// const plusIcon = <FontAwesomeIcon icon={faPlusSquare} size="2x" />;
-const regexIcon = <FontAwesomeIcon icon={faTerminal} size="2x" />;
-const tpscIcon = <FontAwesomeIcon icon={faHandshake} size="2x" />;
-const basicsIcon = <FontAwesomeIcon icon={faTools} size="2x" />;
-const specialSequencesIcon = <FontAwesomeIcon icon={faFileWord} size="2x" />;
-const examplesIcon = <FontAwesomeIcon icon={faPalette} size="2x" />;
+const homeIcon = <FontAwesomeIcon icon={faHome} />;
+const meetupIcon = <FontAwesomeIcon icon={faMeetup} />;
+const yahooIcon = <FontAwesomeIcon icon={faYahoo} />;
+const contactIcon = <FontAwesomeIcon icon={faEnvelope} />;
+const aboutIcon = <FontAwesomeIcon icon={faAddressCard} />;
+const howToIcon = <FontAwesomeIcon icon={faChalkboardTeacher} />;
+const comparisonIcon = <FontAwesomeIcon icon={faBalanceScale} />;
+const pythonIcon = <FontAwesomeIcon icon={faPython} />;
+// const python2Icon = <FontAwesomeIcon icon={faDiceTwo} />;
+// const python3Icon = <FontAwesomeIcon icon={faDiceThree} />;
+const javaScriptIcon = <FontAwesomeIcon icon={faJsSquare} />;
+const reactIcon = <FontAwesomeIcon icon={faReact} />;
+// const plusIcon = <FontAwesomeIcon icon={faPlusSquare} />;
+const regexIcon = <FontAwesomeIcon icon={faTerminal} />;
+const tpscIcon = <FontAwesomeIcon icon={faHandshake} />;
+const basicsIcon = <FontAwesomeIcon icon={faTools} />;
+const specialSequencesIcon = <FontAwesomeIcon icon={faFileWord} />;
+const examplesIcon = <FontAwesomeIcon icon={faPalette} />;
 
 //index is the home page for that topic, not the home page for the site
 const pageData = {

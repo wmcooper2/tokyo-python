@@ -1,24 +1,19 @@
 //urls are separated from the examples to simplify updating them
-const urls = {
+const docs = {
+  compile: "https://docs.python.org/3/library/re.html?highlight=re#re.compile",
   match:
-    "https://docs.python.org/3/library/re.html?highlight=re#re.Pattern.match"
+    "https://docs.python.org/3/library/re.html?highlight=re#re.Pattern.match",
+  search: "https://docs.python.org/3/library/re.html?highlight=re#re.search"
 };
 
 const examples = {
   compile: {
     description: "blank",
-    "basic-use": "blank",
-    "full-use":"blank",
-    "return-value": "blank",
-    documentation: "blank",
-    examples: {
-      1: {
-        text: "blank",
-        pattern:"blank",
-        reg: "blank",
-        result: "blank"
-      }
-    }
+    "basic-use": null,
+    "full-use": null,
+    "return-value": null,
+    documentation: docs.compile,
+    examples: null
   },
 
   match: {
@@ -27,7 +22,7 @@ const examples = {
     "basic-use": "pattern.match(text)",
     "full-use": "pattern.match(text, start, end)",
     "return-value": "A 'match' object or 'None'",
-    documentation: urls.match,
+    documentation: docs.match,
     examples: {
       1: {
         text: "cats",
@@ -55,7 +50,7 @@ const examples = {
       "Matches a pattern anywhere in the text. It is not strict like the 'match' method, but it is lazy like it. This method will look for the pattern anywhere in the text starting at index-0 (default), but it won't continue looking after the first match that it finds. It will not look at a lower index that you give for the start.",
     "basic-use": "pattern.search(text)",
     "full-use": "pattern.search(text, start, end)",
-    documentation: urls.match,
+    documentation: docs.search,
     "return-value": "A 'match' object or 'None'",
     examples: {
       1: {
