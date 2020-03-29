@@ -4,6 +4,10 @@
   margin: 1vh 0;
 }
 
+.re.args-table td {
+  text-align: left;
+}
+
 .text-pattern-table {
   text-align: left;
   width: 30%;

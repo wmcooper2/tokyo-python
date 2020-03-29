@@ -16,31 +16,11 @@ const regexObjects = {
   compile: {
     description:
       "The 'compile' method is the foundation of Python's regex module. You can save the object returned by re.compile() into a variable, then it is a 'pattern' object that can be reused later.",
-    args: true,
+    args: false,
     "basic-use": "re.compile(pattern)",
     "full-use": "re.compile(pattern, flags=0)",
     "return-value": "re.compile(pattern)",
-    documentation: docs.compile,
-    examples: {
-      1: {
-        text: null,
-        pattern: "birds",
-        reg: "re.compile(pattern)",
-        result: "re.compile('birds')"
-      },
-      2: {
-        text: null,
-        pattern: "birds",
-        reg: "re.compile(pattern, re.A)",
-        result: "re.compile('birds', re.ASCII)"
-      },
-      3: {
-        text: null,
-        pattern: "birds",
-        reg: "re.compile(pattern, re.A|re.I)",
-        result: "re.compile('birds', re.IGNORECASE|re.ASCII)"
-      }
-    }
+    documentation: docs.compile
   },
 
   pattern: {

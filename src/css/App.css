@@ -1,17 +1,18 @@
-@import "regex.css";
+@import "sequences.css";
 @import "topics.css";
 @import "basics.css";
 @import "tables.css";
 
 :root {
   font-size: 16px;
-  font-family: "Open Sans";
+  font-family: Arial, "Open Sans";
   --light-grey: rgba(0, 0, 0, 0.2);
   --med-grey: rgba(0, 0, 0, 0.4);
   --dark-grey: rgba(0, 0, 0, 0.6);
 
   --link-color: rgba(0, 0, 0, 1);
   --nav-bar-color: green;
+  --code-color: lightblue;
 
   --topic-nav-color: lightgreen;
   --topic-nav-min-width: 4rem;
@@ -34,6 +35,30 @@ body {
 a {
   text-decoration: none;
   color: var(--link-color);
+}
+
+h1,
+h2 {
+  margin-top: 0px;
+}
+
+h2 {
+  margin-bottom: 0px;
+}
+
+p {
+  padding-left: 2rem;
+  max-width: 80%;
+}
+
+li {
+  line-height: 1.5;
+}
+
+code {
+  background-color: var(--code-color);
+  padding: 0.2rem;
+  border-radius: 3px;
 }
 
 header nav {

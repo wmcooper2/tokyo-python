@@ -1,5 +1,21 @@
 import React from "react";
 
+const sites = [
+  { name: "regex101.com", url: "https://regex101.com", description: null },
+  {
+    name: "regexbuddy.com",
+    url: "https://www.regexbuddy.com",
+    description: null
+  },
+  { name: "buildregex.com", url: "http://buildregex.com/", description: null }
+];
+
+const sitesList = sites.map(item => (
+  <li>
+    <a href={item.url}>{item.name}</a>
+  </li>
+));
+
 const HowTo = () => {
   return (
     <div className="topic-page">
@@ -15,7 +31,11 @@ const HowTo = () => {
           book.
         </a>
       </p>
-      <p>Put links to other good sites on regexes here</p>
+      <p>
+        Here is a collection of sites that I find useful for regular
+        expressions.
+        <ul>{sitesList}</ul>
+      </p>
     </div>
   );
 };

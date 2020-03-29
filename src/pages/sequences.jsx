@@ -2,7 +2,7 @@ import React from "react";
 import { asciiData, specialSequences } from "./asciidata";
 
 const AsciiTable = props => {
-  console.log("ascii props: ", props);
+  // console.log("ascii props: ", props);
   const { chars, handleMouseEnter, handleMouseLeave } = props;
   let list = asciiData.map((item, index) => (
     <span
@@ -25,7 +25,7 @@ const SequenceButtons = props => {
     <span
       key={index}
       className="sequence-button"
-      onClick={() => props.handleClick(item.chars)}
+      onClick={() => props.handleClick(item)}
     >
       {item.seq}
     </span>
@@ -39,7 +39,8 @@ class Sequences extends React.Component {
     this.state = {
       selection: null,
       details: { char: null, name: null, hex: null, dec: null },
-      chars: []
+      chars: [],
+      sequenceDescription: null
     };
     this.handleClick = this.handleClick.bind(this);
     this.handleMouseEnter = this.handleMouseEnter.bind(this);
@@ -47,10 +48,12 @@ class Sequences extends React.Component {
   }
 
   handleClick = props => {
-    console.log("handleClick, props: ", props);
+    const { chars, description } = props;
+    // console.log("handleClick, desc: ", description);
     this.setState(() => {
       return {
-        chars: props
+        chars: chars,
+        description: description
       };
     });
   };
@@ -79,9 +82,20 @@ class Sequences extends React.Component {
     let details = this.state.details;
     return (
       <React.Fragment>
-        <div className="topic-page">
+        <div className="topic-page centered-columns">
           <h1>Special Sequences</h1>
-          <div className="regex special-sequences">
+          <h2>The first 128 ASCII code points</h2>
+          <div className="encodings">
+            {/* maybe shouldn't do encoding buttons... too many characters? */}
+            <button className="encoding">ASCII</button>
+            <button className="encoding" disabled>
+              UTF-8
+            </button>
+            <button className="encoding" disabled>
+              UTF-16
+            </button>
+          </div>
+          <div className="special-sequences">
             <div className="regex-table">
               <AsciiTable
                 handleMouseEnter={this.handleMouseEnter}
@@ -89,23 +103,19 @@ class Sequences extends React.Component {
                 {...this.state}
               />
             </div>
-            <div className="regex-controls">
-              <div className="sequence-buttons">
-                <SequenceButtons
-                  handleClick={this.handleClick}
-                  {...this.state}
-                />
-              </div>
-              <div className="character-details">
-                <span className="details-name">Name</span>
-                <span className="details-hex">Hex</span>
-                <span className="details-dec">Dec</span>
-                <span className="details-name">{details.name}</span>
-                <span className="details-hex">{details.hex}</span>
-                <span className="details-dec">{details.dec}</span>
-              </div>
+            <div className="sequence-buttons">
+              <SequenceButtons handleClick={this.handleClick} {...this.state} />
+            </div>
+            <div className="character-details">
+              <span className="details-name">Name</span>
+              <span className="details-hex">Hex</span>
+              <span className="details-dec">Dec</span>
+              <span className="details-name">{details.name}</span>
+              <span className="details-hex">{details.hex}</span>
+              <span className="details-dec">{details.dec}</span>
             </div>
           </div>
+          <div className="sequence-description">{this.state.description}</div>
         </div>
       </React.Fragment>
     );

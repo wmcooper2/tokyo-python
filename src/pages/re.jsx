@@ -31,6 +31,36 @@ const FlagTable = () => {
   );
 };
 
+const MethodTable2 = () => {
+  const rows = reMethods.map((item, index) => (
+    <tr key={index}>
+      <td>
+        <code>{item["basic-use"]}</code>
+      </td>
+      <td>
+        <code>{item["full-use"]}</code>
+      </td>
+    </tr>
+  ));
+
+  let table = (
+    <table className="re args-table">
+      <thead>
+        <tr>
+          <th>
+            <td>Required</td>
+          </th>
+          <th>
+            <td>Optional</td>
+          </th>
+        </tr>
+      </thead>
+      <tbody>{rows}</tbody>
+    </table>
+  );
+  return table;
+};
+
 const MethodTable = () => {
   const rows = reMethods.map((item, index) => (
     <table key={index} className="args-table">
@@ -66,7 +96,7 @@ const RePage = () => {
         flags and methods for the re module.
       </p>
       <FlagTable />
-      <MethodTable />
+      <MethodTable2 />
     </div>
   );
 };

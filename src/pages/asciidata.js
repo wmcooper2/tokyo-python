@@ -134,21 +134,21 @@ const specialSequences = [
   {
     seq: "\\s",
     id: 1,
-    description: "Any whitespace character",
+    description: "Any whitespace character.",
     chars: [9, 10, 11, 12, 13, 32]
   },
 
   {
     seq: "\\d",
     id: 2,
-    description: "Any digit",
+    description: "Any digit [0-9]",
     chars: [48, 49, 50, 51, 52, 53, 54, 55, 56, 57]
   },
 
   {
     seq: "\\w",
     id: 3,
-    description: "Any word character",
+    description: "Any word character, [A-Za-z0-9_]",
     chars: [
       48,
       49,
@@ -219,7 +219,8 @@ const specialSequences = [
   {
     seq: "\\b",
     id: 4,
-    description: "Empty string at beginning or end of a word",
+    description:
+      "Word boundary. That is the boundary (not space) between word characters. So, basically an empty string at the beginning or ending of a word character.",
     chars: []
   },
 
@@ -356,7 +357,7 @@ const specialSequences = [
   {
     seq: "\\D",
     id: 6,
-    description: "Any non-digit",
+    description: "Any non-digit [^0-9]",
     chars: [
       32,
       33,
@@ -450,7 +451,7 @@ const specialSequences = [
   {
     seq: "\\W",
     id: 7,
-    description: "Any non-word character",
+    description: "Any non-word character [^A-Za-z0-9_]",
     chars: [
       32,
       33,
@@ -491,31 +492,51 @@ const specialSequences = [
   {
     seq: "\\B",
     id: 8,
-    description: "Empty string not at beginning or end of a word",
+    description:
+      "Non word boundary. So basically the boundaries between letters. Empty string not at beginning or end of a word.",
     chars: []
   },
 
   {
     seq: "\\number",
     id: 9,
-    description: "Matches contents of the group of the same number",
+    description:
+      "A group number. Matches contents of a 'captured' group of the same number that you made by using parentheses in your regex. Index starts at 1.",
     chars: []
   },
 
-  { seq: "\\0", id: 10, description: "blank", chars: [0] },
+  {
+    seq: "\\0",
+    id: 10,
+    description: "How do you match a null character?",
+    chars: [0]
+  },
 
-  { seq: "\\X", id: 11, description: "blank", chars: [] },
+  { seq: "\\X", id: 11, description: "Does this belong here?", chars: [] },
 
-  { seq: "[\\b]", id: 12, description: "blank", chars: [] },
+  {
+    seq: "[\\b]",
+    id: 12,
+    description:
+      "A backspace. This matches a 'control' character. This is not a printable character.",
+    chars: []
+  },
 
   {
     seq: "\\A",
     id: 13,
-    description: "Matches only at the beginning",
+    description:
+      "The boundary that is the START of a string. Matches only at the start. The same as '^'.",
     chars: [2]
   },
 
-  { seq: "\\Z", id: 14, description: "Matches only at the end", chars: [3] }
+  {
+    seq: "\\Z",
+    id: 14,
+    description:
+      "The boundary that is the END of a string. Matches only at the end. The same as '$'.",
+    chars: [3]
+  }
 ];
 
 export { asciiData, specialSequences };

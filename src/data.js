@@ -84,15 +84,15 @@ const pageData = {
     path: "regex",
     "nav-link": regexIcon,
     topics: {
-      "how-to": {
-        name: "how",
-        page: <HowToPage />,
-        icon: howToIcon
-      },
       basics: {
         name: "basics",
         page: <BasicsPage />,
         icon: basicsIcon
+      },
+      "how-to": {
+        name: "how",
+        page: <HowToPage />,
+        icon: howToIcon
       },
       "special-sequences": {
         name: "sequences",

@@ -99,7 +99,7 @@ const Concepts = () => {
 const BasicsPage = () => {
   return (
     <div className="topic-page">
-      <h1>Basics Page</h1>
+      <h1>Basics Concepts</h1>
       <Concepts className="concept-block" />
     </div>
   );
