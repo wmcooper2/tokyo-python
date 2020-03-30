@@ -35,7 +35,7 @@ const EmailForm = () => {
   );
 };
 
-const ContactPage = props => {
+const ContactPage = () => {
   return (
     <div className="contact topic-page">
       <h1>Contact Page</h1>

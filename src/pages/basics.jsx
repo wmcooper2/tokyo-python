@@ -1,5 +1,5 @@
 import React from "react";
-import regexObjects from "./basicsdata";
+import regexObjects from "./data/basicsdata";
 
 const RegexObject = props => {
   const data = Object.entries(props);

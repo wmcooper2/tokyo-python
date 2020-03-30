@@ -9,6 +9,7 @@ import HomePage from "./pages/home";
 import HowToPage from "./pages/howto";
 import JavascriptPage from "./pages/javascript";
 import MeetupPage from "./pages/meetup";
+import PatternPage from "./pages/pattern";
 import Python23Page from "./pages/python23";
 import ReactPage from "./pages/react";
 import RegexPage from "./pages/regex";
@@ -116,7 +117,7 @@ const pageData = {
       },
       pattern: {
         name: "pattern",
-        page: null,
+        page: <PatternPage />,
         icon: "P"
       },
       match: {
