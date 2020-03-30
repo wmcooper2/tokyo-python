@@ -1,12 +1,8 @@
 import React from "react";
 import TopicContent from "./components/topiccontent";
-import pageData from "./data";
+import pageData from "./SiteMainData";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import "./css/App.css";
-
-// const Logo = () => {
-// return <img id="logo" src="placeholder.jpeg" alt="Logo"></img>;
-// };
 
 const Header = () => {
   //navigation bar header
@@ -20,10 +16,7 @@ const Header = () => {
   }
   return (
     <header>
-      <nav>
-        {/* <Logo /> */}
-        {navLinks}
-      </nav>
+      <nav>{navLinks}</nav>
     </header>
   );
 };

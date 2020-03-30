@@ -6,8 +6,18 @@ const patternMethods = [
     description: null,
     "return-value": "Match object | None",
     examples: {
-      1: {},
-      2: {},
+      1: {
+        text: "Koalas are delicious.",
+        pattern: "pattern = re.compile(regex)",
+        reg: "r'are'",
+        result: "<re.Match object; span=(7, 10), match='are'>"
+      },
+      2: {
+        text: "Koalas are delicious.",
+        pattern: "pattern = re.compile(regex)",
+        reg: "r'cats'",
+        result: "None"
+      },
       3: {}
     }
   },
@@ -109,6 +119,7 @@ const patternAttributes = [
     name: "flags",
     usage: "pattern.flags",
     description: "The flags that you passed to 're.compile()'.",
+    "return-value": null,
     examples: {
       1: {},
       2: {},
@@ -120,6 +131,7 @@ const patternAttributes = [
     name: "groups",
     usage: "pattern.groups",
     description: "The number of capturing groups in your pattern.",
+    "return-value": null,
     examples: {
       1: {},
       2: {},
@@ -132,6 +144,7 @@ const patternAttributes = [
     usage: "pattern.groupindex",
     description:
       "A dictionary object of any named groups you may have used for the regex object.",
+    "return-value": null,
     examples: {
       1: {},
       2: {},
@@ -144,6 +157,7 @@ const patternAttributes = [
     usage: "pattern.pattern",
     description:
       "The pattern string from which the pattern object was compiled.",
+    "return-value": null,
     examples: {
       1: {},
       2: {},

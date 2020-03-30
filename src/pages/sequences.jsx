@@ -86,7 +86,7 @@ class Sequences extends React.Component {
           <h1>Special Sequences</h1>
           <h2>The first 128 ASCII code points</h2>
           <div className="encodings">
-            {/* maybe shouldn't do encoding buttons... too many characters? */}
+            {/* maybe shouldn't do encoding buttons... too many characters?  Just stick with ASCII...*/}
             <button className="encoding">ASCII</button>
             <button className="encoding" disabled>
               UTF-8
