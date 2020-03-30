@@ -16,7 +16,13 @@ const CompilePage = () => {
   return (
     <div className="topic-page">
       <h1>Compile Page</h1>
-      <p>{compileMethod.description}</p>
+      <p>
+        The <code>re.compile(pattern)</code> method returns a{" "}
+        <strong>'compiled regular expression object'</strong>. It is the
+        foundation of Python's regex module. It is the only method that gets
+        flags passed to it. This method does not have a text argument. It only
+        compiles the pattern into a regex object to be used later.,
+      </p>
       <ArgsTable {...compileMethod} />
       <TextPatternTable
         text={compileMethod.text}

@@ -10,8 +10,8 @@ const sites = [
   { name: "buildregex.com", url: "http://buildregex.com/", description: null }
 ];
 
-const sitesList = sites.map(item => (
-  <li>
+const sitesList = sites.map((item, index) => (
+  <li key={index}>
     <a href={item.url}>{item.name}</a>
   </li>
 ));
@@ -34,8 +34,8 @@ const HowTo = () => {
       <p>
         Here is a collection of sites that I find useful for regular
         expressions.
-        <ul>{sitesList}</ul>
       </p>
+      <ul>{sitesList}</ul>
     </div>
   );
 };

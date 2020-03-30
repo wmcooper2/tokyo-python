@@ -19,15 +19,14 @@ const FlagsTable = props => {
         <tr>
           <th>Flags</th>
         </tr>
-      </thead>
-      <tbody>
         <tr>
-          <td>Short</td>
-          <td>Long</td>
+          <th>Short</th>
+          <th>Long</th>
         </tr>
-        {flagRows}
-      </tbody>
+      </thead>
+      <tbody>{flagRows}</tbody>
     </table>
   );
 };
+
 export default FlagsTable;

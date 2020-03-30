@@ -20,6 +20,8 @@
   --topic-nav-max-width: 10rem;
 
   --header-height: 5rem;
+
+  line-height: 1.5;
 }
 
 body {

@@ -10,6 +10,19 @@ const reFlags = [
 
 const reMethods = [
   {
+    method: "compile",
+    "basic-use": "re.compile(pattern)",
+    "full-use": "re.compile(pattern, flags=0)",
+    description: "This method the foundation of this module.",
+    "return-value": "Compiled Regex Object | None",
+    examples: {
+      1: {},
+      2: {},
+      3: {}
+    }
+  },
+
+  {
     method: "search",
     "basic-use": "re.search(pattern, string)",
     "full-use": "re.search(pattern, string, flags=0)",
@@ -115,8 +128,8 @@ const reMethods = [
 
   {
     method: "escape",
-    "basic-use": "re.purge(pattern)",
-    "full-use": "re.purge(pattern)",
+    "basic-use": "re.escape(pattern)",
+    "full-use": "re.escape(pattern)",
     description: null,
     "return-value": null,
     examples: {

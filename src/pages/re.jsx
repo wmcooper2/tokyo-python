@@ -8,8 +8,7 @@ const RePage = () => {
     <div className="topic-page">
       <h1>Re Page</h1>
       <p>
-        This is meant to be summary of the official documentation. Here are the
-        flags and methods for the re module.
+        Quick reference for the <code>re</code> module.
       </p>
       <FlagsTable data={reFlags} />
       <MethodTable data={reMethods} />

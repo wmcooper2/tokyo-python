@@ -1,5 +1,5 @@
 import React from "react";
-import { asciiData, specialSequences } from "./data/asciidata";
+import { asciiData, specialSequences } from "./data/ascii-data";
 
 const AsciiTable = props => {
   // console.log("ascii props: ", props);
