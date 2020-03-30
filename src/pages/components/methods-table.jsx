@@ -16,48 +16,20 @@ const MethodTable = props => {
   ));
 
   let table = (
-    <table className="re args-table">
+    <table className="re method-table">
       <thead>
         <tr>
-          <th>
-            <td>Required</td>
-          </th>
-          <th>
-            <td>Optional</td>
-          </th>
+          <th>Methods</th>
+        </tr>
+        <tr>
+          <th>Required</th>
+          <th>Optional</th>
         </tr>
       </thead>
       <tbody>{rows}</tbody>
     </table>
   );
   return table;
-};
-
-const MethodTable2 = props => {
-    const {data} = props;
-  const rows = data.map((item, index) => (
-    <table key={index} className="args-table">
-      <thead>
-        <tr>
-          <th>{item.method}</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>
-            <code>{item["basic-use"]}</code>
-          </td>
-        </tr>
-        <tr>
-          <td>
-            <code>{item["full-use"]}</code>
-          </td>
-        </tr>
-      </tbody>
-    </table>
-  ));
-
-  return rows;
 };
 
 export default MethodTable;

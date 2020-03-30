@@ -18,9 +18,12 @@ const AtrributesTable = props => {
   const { data } = props;
   const rows = data.map((item, index) => (
     <tr key={index}>
-      <td>
-        <code>{item.usage}</code>
-      </td>
+      <tr>
+        <td width="200px">
+          <code>{item.usage}</code>
+        </td>
+        <td>{item.description}</td>
+      </tr>
     </tr>
   ));
 
@@ -29,7 +32,7 @@ const AtrributesTable = props => {
       <thead>
         <tr>
           <th>
-            <td>{data.name}</td>
+            <tr>Attributes</tr>
           </th>
         </tr>
       </thead>

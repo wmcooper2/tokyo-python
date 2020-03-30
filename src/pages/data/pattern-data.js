@@ -1,32 +1,33 @@
 const patternMethods = [
   {
     method: "search",
+    description: null,
     "basic-use": "pattern.search(string)",
     "full-use": "pattern.search(string, start, end)",
-    description: null,
     "return-value": "Match object | None",
+    text: "Koalas are delicious.",
+    pattern: "pattern = re.compile(regex)",
     examples: {
       1: {
-        text: "Koalas are delicious.",
-        pattern: "pattern = re.compile(regex)",
         reg: "r'are'",
         result: "<re.Match object; span=(7, 10), match='are'>"
       },
       2: {
-        text: "Koalas are delicious.",
-        pattern: "pattern = re.compile(regex)",
         reg: "r'cats'",
         result: "None"
       },
-      3: {}
+      3: {
+        reg: "r'cats'",
+        result: "None"
+      }
     }
   },
 
   {
     method: "match",
+    description: null,
     "basic-use": "pattern.match(string)",
     "full-use": "pattern.match(string, start, end)",
-    description: null,
     "return-value": "Match object | None",
     examples: {
       1: {},
@@ -37,9 +38,9 @@ const patternMethods = [
 
   {
     method: "fullmatch",
+    description: null,
     "basic-use": "pattern.fullmatch(string)",
     "full-use": "pattern.fullmatch(string, start, end)",
-    description: null,
     "return-value": "Match object | None",
     examples: {
       1: {},
@@ -50,9 +51,9 @@ const patternMethods = [
 
   {
     method: "split",
+    description: "Same as re.split() function, but different syntax.",
     "basic-use": "pattern.split(string)",
     "full-use": "pattern.split(string, maxsplit=0)",
-    description: "Same as re.split() function, but different syntax.",
     "return-value": "List | None",
     examples: {
       1: {},
@@ -63,9 +64,9 @@ const patternMethods = [
 
   {
     method: "findall",
+    description: "Similar to re.findall() function.",
     "basic-use": "pattern.findall(string)",
     "full-use": "pattern.findall(string, start, end)",
-    description: "Similar to re.findall() function.",
     "return-value": null,
     examples: {
       1: {},
@@ -76,9 +77,9 @@ const patternMethods = [
 
   {
     method: "finditer",
+    description: "Similar to re.finditer() function.",
     "basic-use": "pattern.finditer(string)",
     "full-use": "pattern.finditer(string, start, end)",
-    description: "Similar to re.finditer() function.",
     "return-value": null,
     examples: {
       1: {},
@@ -89,9 +90,9 @@ const patternMethods = [
 
   {
     method: "sub",
+    description: "Identical to re.sub() function.",
     "basic-use": "pattern.sub(repl, string)",
     "full-use": "pattern.sub(repl, string, count=0)",
-    description: "Identical to re.sub() function.",
     "return-value": null,
     examples: {
       1: {},
@@ -102,9 +103,9 @@ const patternMethods = [
 
   {
     method: "subn",
+    description: "Identical to re.subn() function.",
     "basic-use": "pattern.subn(repl, string)",
     "full-use": "pattern.subn(repl, string, count=0)",
-    description: "Identical to re.subn() function.",
     "return-value": null,
     examples: {
       1: {},
@@ -117,8 +118,8 @@ const patternMethods = [
 const patternAttributes = [
   {
     name: "flags",
-    usage: "pattern.flags",
     description: "The flags that you passed to 're.compile()'.",
+    usage: "pattern.flags",
     "return-value": null,
     examples: {
       1: {},
@@ -129,8 +130,8 @@ const patternAttributes = [
 
   {
     name: "groups",
-    usage: "pattern.groups",
     description: "The number of capturing groups in your pattern.",
+    usage: "pattern.groups",
     "return-value": null,
     examples: {
       1: {},
@@ -141,9 +142,9 @@ const patternAttributes = [
 
   {
     name: "groupindex",
-    usage: "pattern.groupindex",
     description:
       "A dictionary object of any named groups you may have used for the regex object.",
+    usage: "pattern.groupindex",
     "return-value": null,
     examples: {
       1: {},
@@ -154,9 +155,9 @@ const patternAttributes = [
 
   {
     name: "pattern",
-    usage: "pattern.pattern",
     description:
       "The pattern string from which the pattern object was compiled.",
+    usage: "pattern.pattern",
     "return-value": null,
     examples: {
       1: {},

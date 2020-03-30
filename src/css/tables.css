@@ -1,10 +1,10 @@
 .args-table,
-.method-table {
+.example-table {
   text-align: left;
   margin: 1vh 0;
 }
 
-.re.args-table td {
+.re.method-table td {
   text-align: left;
 }
 
