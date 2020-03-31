@@ -150,6 +150,19 @@ const reMethods = [
       2: {},
       3: {}
     }
+  },
+
+  {
+    method: "error",
+    "basic-use": "re.error(message)",
+    "full-use": "re.error(message, pattern=None, pos=None)",
+    description: null,
+    "return-value": null,
+    examples: {
+      1: {},
+      2: {},
+      3: {}
+    }
   }
 ];
 

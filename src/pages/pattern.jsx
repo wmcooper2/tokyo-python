@@ -8,8 +8,9 @@ const PatternPage = () => {
     <div className="topic-page">
       <h1>Pattern Objects</h1>
       <p>
-        The 'pattern' object's method names are similar to the ones in the 're'
-        module. Don't confuse them.
+        The <code>pattern</code> <strong>object's</strong> method names are
+        similar to the ones in the <code>re</code> <strong>module</strong>.
+        Don't confuse them.
       </p>
       <AttributesTable data={patternAttributes} />
       <MethodsTable data={patternMethods} />

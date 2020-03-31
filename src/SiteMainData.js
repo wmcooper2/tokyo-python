@@ -8,6 +8,7 @@ import ExamplesPage from "./pages/examples";
 import HomePage from "./pages/home";
 import HowToPage from "./pages/howto";
 import JavascriptPage from "./pages/javascript";
+import MatchPage from "./pages/match";
 import MeetupPage from "./pages/meetup";
 import PatternPage from "./pages/pattern";
 import Python23Page from "./pages/python23";
@@ -122,7 +123,7 @@ const pageData = {
       },
       match: {
         name: "match",
-        page: null,
+        page: <MatchPage />,
         icon: "M"
       }
     },

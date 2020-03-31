@@ -13,7 +13,7 @@ const BasicConcepts = props => {
         <a href={details.documentation} className="documentation-link">
           <h2>{methodName}</h2>
         </a>
-        <p className="method-description">{details.description}</p>
+        {details.description}
         <ParagraphsTable {...details.examples} />
       </div>
     );

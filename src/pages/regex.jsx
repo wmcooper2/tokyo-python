@@ -6,10 +6,9 @@ const RegexPage = () => {
       <h1>Regex Page</h1>
       <p>Regular expressions are awesome.</p>
       <p>
-        This is meant to be summary of the official documentation. Here are the
-        flags and methods for the re module. When learning about regular
-        expressions in Python, there are 4 major points that you should be
-        careful not to confuse;
+        This is meant to be summary of the official documentation. When learning
+        about regular expressions in Python, there are 4 major points that you
+        should be careful not to confuse;
       </p>
       <ul>
         <li>
