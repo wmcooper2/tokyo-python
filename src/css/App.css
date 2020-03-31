@@ -7,20 +7,31 @@
 :root {
   font-size: 16px;
   font-family: Arial, "Open Sans";
+
+  /* general colors */
   --light-grey: rgba(0, 0, 0, 0.2);
   --med-grey: rgba(0, 0, 0, 0.4);
   --dark-grey: rgba(0, 0, 0, 0.6);
 
-  --link-color: rgba(0, 0, 0, 1);
-  --nav-bar-color: green;
+  /* component/tag colors */
+  --text-bg-color: rgba(255, 255, 255, 1);
   --code-color: lightblue;
 
-  --topic-nav-color: lightgreen;
-  --topic-nav-min-width: 4rem;
+  /* main nav bar */
+  --link-color: rgba(0, 0, 0, 1);
+  --nav-bar-color: rgba(2, 126, 22, 0.918);
+  --header-color-hover: rgba(255, 255, 255, 0.1);
+  --header-height: 5rem;
+  --header-min-height: 3rem;
+
+  /* topic nav bar */
+  --topic-nav-color: rgba(255, 255, 255, 1);
+  --topic-nav-min-width: 2rem;
   --topic-nav-max-width: 10rem;
 
-  --header-height: 5rem;
-
+  /* other component vars */
+  --transition-speed: 300ms;
+  --scale-size: 1.3;
   line-height: 1.5;
 }
 
@@ -29,10 +40,24 @@ body {
   margin: 0;
 }
 
+body,
+html {
+  height: 100%;
+}
+
 .App {
   display: flex;
   flex-direction: column;
   height: 100vh;
+  /* overscroll-behavior: none; */
+  /* try to prevent bouncing but I cant use this property */
+}
+
+.App {
+  background-image: url(../images/tokyo-tower.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 a {
@@ -49,9 +74,11 @@ h2 {
   margin-bottom: 0px;
 }
 
-p {
+p,
+ul {
   padding-left: 2rem;
   max-width: 80%;
+  /* background-color: var(--text-bg-color); */
 }
 
 li {
@@ -66,14 +93,13 @@ code {
 
 header nav {
   align-items: center;
-  background-color: var(--nav-bar-color);
+  /* background-color: var(--header-color); */
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   position: fixed;
-  height: var(--header-height);
+  height: var(--header-min-height);
   width: 100%;
-  z-index: 1000;
 }
 
 header nav ol {
@@ -82,7 +108,24 @@ header nav ol {
   font-size: 2rem;
 }
 
-#logo {
-  width: 50px;
-  height: 50px;
+nav {
+  transition-duration: var(--transition-speed);
+  filter: opacity(10%);
+}
+
+nav:hover {
+  filter: opacity(100%);
+}
+
+/* nav:hover svg { */
+/* transform: scale(1.2); */
+/* } */
+
+svg {
+  color: white;
+  transition: var(--transition-speed);
+}
+
+svg:hover {
+  transform: scale(var(--scale-size));
 }

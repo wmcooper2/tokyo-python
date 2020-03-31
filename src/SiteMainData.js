@@ -63,7 +63,7 @@ const specialSequencesIcon = <FontAwesomeIcon icon={faFileWord} />;
 const examplesIcon = <FontAwesomeIcon icon={faPalette} />;
 
 //index is the home page for that topic, not the home page for the site
-const pageData = {
+const mainData = {
   home: {
     path: "home",
     "nav-link": homeIcon,
@@ -172,4 +172,4 @@ const pageData = {
   }
 };
 
-export default pageData;
+export default mainData;

@@ -6,13 +6,12 @@ const EmailForm = () => {
       action="https://wmcooper2.com/tokyo-python/send"
       method="post"
       enctype="application/x-www-form-urlencoded"
-      // enctype="text/plain"
     >
       <input
         type="text"
         id="name"
         name="sendersName"
-        placeholder="Name"
+        placeholder="name"
         required
       />
       <input
@@ -25,7 +24,7 @@ const EmailForm = () => {
       <textarea
         id="message"
         name="message"
-        placeholder="Message... (1000 characters max)"
+        placeholder="message... (1000 characters max)"
         maxLength={1000}
         wrap="hard"
         required

@@ -1,13 +1,14 @@
 import React from "react";
-import TopicContent from "./components/topiccontent";
-import pageData from "./SiteMainData";
+// import TopicContent from "./components/topiccontent";
+import TopicContent from "./nav-bar-components/topic-nav-bar";
+import mainData from "./SiteMainData";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import "./css/App.css";
 
 const Header = () => {
   //navigation bar header
   let navLinks = [];
-  for (let [key, value] of Object.entries(pageData)) {
+  for (let [key, value] of Object.entries(mainData)) {
     navLinks.push(
       <ol key={key}>
         <Link to={`/${value.path}`}>{value["nav-link"]}</Link>
@@ -23,10 +24,10 @@ const Header = () => {
 
 const App = () => {
   let routes = [];
-  for (let key of Object.keys(pageData)) {
+  for (let key of Object.keys(mainData)) {
     routes.push(
-      <Route key={key} path={`/${pageData[key].path}`}>
-        <TopicContent {...pageData[key]} />
+      <Route key={key} path={`/${mainData[key].path}`}>
+        <TopicContent {...mainData[key]} />
       </Route>
     );
   }
@@ -34,14 +35,14 @@ const App = () => {
   //add the default path "/" for the home page
   routes.push(
     <Route key="home" path="/">
-      <TopicContent {...pageData["home"]} />
+      <TopicContent {...mainData["home"]} />
     </Route>
   );
 
   //main topic routes for header nav bar
   return (
     <Router>
-      <div className="App" id="border">
+      <div className="App">
         <Header />
         <Switch>{routes}</Switch>
       </div>
