@@ -1,5 +1,4 @@
 import React from "react";
-// import TopicContent from "./components/topiccontent";
 import TopicContent from "./nav-bar-components/topic-nav-bar";
 import mainData from "./SiteMainData";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";

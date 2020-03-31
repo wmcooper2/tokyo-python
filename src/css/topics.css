@@ -3,6 +3,10 @@
   flex-direction: column;
   margin-top: var(--header-min-height);
   margin-left: var(--topic-nav-max-width);
+  /* margin-left: auto; */
+  /* background-color: var(--paragraph-bg); */
+  margin-right: auto;
+  color: var(--font-color);
 }
 
 .topics-nav {

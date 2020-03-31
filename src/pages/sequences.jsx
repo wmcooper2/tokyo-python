@@ -83,8 +83,8 @@ class Sequences extends React.Component {
     return (
       <React.Fragment>
         <div className="topic-page centered-columns">
-          <h1>Special Sequences</h1>
-          <h2>The first 128 ASCII code points</h2>
+          <h1 className="sequences-title">Special Sequences</h1>
+          {/* <h2>The first 128 ASCII code points</h2> */}
           <div className="encodings">
             {/* maybe shouldn't do encoding buttons... too many characters?  Just stick with ASCII...*/}
             <button className="encoding">ASCII</button>
@@ -108,14 +108,14 @@ class Sequences extends React.Component {
             </div>
             <div className="character-details">
               <span className="details-name">Name</span>
-              <span className="details-hex">Hex</span>
-              <span className="details-dec">Dec</span>
               <span className="details-name">{details.name}</span>
+              <span className="details-hex">Hex</span>
               <span className="details-hex">{details.hex}</span>
+              <span className="details-dec">Dec</span>
               <span className="details-dec">{details.dec}</span>
             </div>
+            <div className="sequence-description">{this.state.description}</div>
           </div>
-          <div className="sequence-description">{this.state.description}</div>
         </div>
       </React.Fragment>
     );

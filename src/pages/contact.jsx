@@ -2,35 +2,37 @@ import React from "react";
 
 const EmailForm = () => {
   return (
-    <form
-      action="https://wmcooper2.com/tokyo-python/send"
-      method="post"
-      enctype="application/x-www-form-urlencoded"
-    >
-      <input
-        type="text"
-        id="name"
-        name="sendersName"
-        placeholder="name"
-        required
-      />
-      <input
-        type="email"
-        id="email"
-        name="sendersEmail"
-        placeholder="email"
-        required
-      />
-      <textarea
-        id="message"
-        name="message"
-        placeholder="message... (1000 characters max)"
-        maxLength={1000}
-        wrap="hard"
-        required
-      />
-      <input type="submit" value="Submit" />
-    </form>
+    <div className="frosted-glass">
+      <form
+        action="https://wmcooper2.com/tokyo-python/send"
+        method="post"
+        enctype="application/x-www-form-urlencoded"
+      >
+        <input
+          type="text"
+          id="name"
+          name="sendersName"
+          placeholder="name"
+          required
+        />
+        <input
+          type="email"
+          id="email"
+          name="sendersEmail"
+          placeholder="email"
+          required
+        />
+        <textarea
+          id="message"
+          name="message"
+          placeholder="message... (1000 characters max)"
+          maxLength={1000}
+          wrap="hard"
+          required
+        />
+        <input type="submit" value="Submit" />
+      </form>
+    </div>
   );
 };
 
