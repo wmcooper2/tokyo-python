@@ -3,7 +3,7 @@ import React from "react";
 const javascriptData = {
   title: "javascript",
   variables: {
-    // description: "Assigning values to variables is dones like this; ",
+    description: "There are 4 ways; ",
     examples: [
       <code>cars = 4</code>,
       <code>var cars = 4</code>,
@@ -13,12 +13,39 @@ const javascriptData = {
   },
 
   whitespace: {
-    // description:
-    //   "White space is important. Instead of the braces that other languages use, whitespace is used as a delimiter for blocks of code (to define scope).",
+    description: "Whitespace is not important.",
     examples: [
-      <code>
-        <pre>{`function hats(hats){ return hats*2}`}</pre>
-      </code>
+      <pre>
+        <code>
+          {`function hats(hats){
+    return hats*2
+}`}
+        </code>
+      </pre>
+    ]
+  },
+
+  strings: {
+    description: "There are several ways to make strings.",
+    examples: [
+      <code>'single quotes'</code>,
+      <code>"double quotes"</code>,
+      <code>`backticks`</code>,
+      <code>{`\`templates with \${variables}, use backticks\``}</code>
+    ]
+  },
+
+  comments: {
+    description: null,
+    examples: [
+      <code>//double slash for single lines</code>,
+      <pre>
+        <code>{`/*
+slash-star sandwich 
+for
+multi-line
+*/`}</code>
+      </pre>
     ]
   }
 };
