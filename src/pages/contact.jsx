@@ -40,7 +40,7 @@ const EmailForm = () => {
 const ContactPage = () => {
   return (
     <div className="contact topic-page">
-      {/* <h1>Contact Page</h1> */}
+      <h1>Contact</h1>
       <EmailForm />
       <p>
         Add something that spambots can't automatically input so that I know

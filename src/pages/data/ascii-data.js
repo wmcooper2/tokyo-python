@@ -222,8 +222,7 @@ const specialSequences = [
   {
     seq: "\\b",
     id: 4,
-    description:
-      "Word boundary. That is the boundary (not space) between word characters. So, basically an empty string at the beginning or ending of a word character.",
+    description: "Word BOUNDARY.",
     chars: []
   },
 
@@ -467,8 +466,7 @@ const specialSequences = [
   {
     seq: "\\B",
     id: 8,
-    description:
-      "Non-word BOUNDARY. So basically the boundaries BETWEEN word characters.",
+    description: "Non-word BOUNDARY.",
     chars: []
   },
 
@@ -491,22 +489,21 @@ const specialSequences = [
   {
     seq: "[\\b]",
     id: 12,
-    description:
-      "A backspace. This matches a 'control' character. This is not a printable character.",
+    description: "A backspace.",
     chars: []
   },
 
   {
     seq: "\\A",
     id: 13,
-    description: "The BOUNDARY that is the START of a string. The same as '^'.",
+    description: "The BOUNDARY that is the START of a string '^'.",
     chars: [2]
   },
 
   {
     seq: "\\Z",
     id: 14,
-    description: "The BOUNDARY that is the END of a string. The same as '$'.",
+    description: "The BOUNDARY that is the END of a string '$'.",
     chars: [3]
   }
 ];
