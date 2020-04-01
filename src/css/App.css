@@ -132,6 +132,6 @@ svg {
   transition: var(--transition-speed);
 }
 
-svg:hover {
+nav svg:hover {
   transform: scale(var(--scale-size));
 }

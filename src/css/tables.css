@@ -25,10 +25,3 @@ td {
 td.cell-label {
   width: 5vw;
 }
-
-.regex-table {
-  display: grid;
-  grid-template-columns: repeat(16, 1fr);
-  border: 1px solid black;
-  max-height: 30rem;
-}

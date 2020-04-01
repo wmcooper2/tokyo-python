@@ -6,15 +6,7 @@
   margin-top: var(--header-min-height);
 }
 
-.frosted-glass {
-  content: "";
-  position: absolute;
-  background: inherit;
-  border-radius: 5px;
-  box-shadow: inset 0 0 2000px rgba(255, 255, 255, 0.5);
-  filter: blur(5px);
-}
-
+/* save this for reference */
 /* frosted glass */
 /* form:before { */
 /* width: 500px; */
@@ -38,14 +30,12 @@ form {
 
 input {
   height: 2rem;
-  color: var(--font-color);
-  z-index: 1;
+  /* z-index: 1; */
 }
 
 textarea {
   height: 400px;
-  color: var(--font-color);
-  z-index: 1;
+  /* z-index: 1; */
 }
 
 input[type="text"],
@@ -55,21 +45,34 @@ textarea {
   font-size: 1.5rem;
   outline: none;
   background-color: transparent;
+  /* background-color: rgba(0,0,0,0.2); */
   border: none;
+  color: var(--font-color);
+  z-index: 1;
 }
 
 input[type="submit"] {
   background-color: transparent;
   border: none;
   color: white;
-  text-align: center;
   text-decoration: none;
   font-size: 2rem;
   margin: 1rem auto;
+  padding: 0 0;
   cursor: pointer;
 }
 
 input::placeholder,
 textarea::placeholder {
   color: var(--font-color);
+  opacity: 40%;
+}
+
+textarea::placeholder {
+  /* text-align: center; */
+}
+
+input:focus,
+textarea:focus {
+  box-shadow: inset 0 0 1px 1px rgba(255, 255, 255, 1);
 }

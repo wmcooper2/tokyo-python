@@ -85,6 +85,7 @@ class Sequences extends React.Component {
     return (
       <React.Fragment>
         {/* <div className="sequences topic-page centered-columns"> */}
+
         <div className="sequences topic-page">
           <h1 className="sequences-title">Special Sequences</h1>
           {/* <h2>The first 128 ASCII code points</h2> */}
@@ -97,9 +98,13 @@ class Sequences extends React.Component {
             <button className="encoding" disabled>
               UTF-16
             </button>
+            <button className="encoding" disabled>
+              Unicode
+            </button>
           </div>
+
           <div className="special-sequences">
-            <div className="regex-table">
+            <div className="ascii-grid">
               <AsciiTable
                 handleMouseEnter={this.handleMouseEnter}
                 handleMouseLeave={this.handleMouseLeave}
@@ -109,6 +114,7 @@ class Sequences extends React.Component {
             <div className="sequence-buttons">
               <SequenceButtons handleClick={this.handleClick} {...this.state} />
             </div>
+
             <div className="character-details">
               <span className="details-name">Name</span>
               <span className="details-name">{details.name}</span>

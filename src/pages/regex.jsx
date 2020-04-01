@@ -4,12 +4,12 @@ const RegexPage = () => {
   return (
     <div className="topic-page">
       <h1 className="left-align">Regex Page</h1>
-      <p>Regular expressions are awesome.</p>
       <p>
         This is meant to be summary of the official documentation. When learning
         about regular expressions in Python, there are 4 major points that you
         should be careful not to confuse;
       </p>
+
       <ul>
         <li>
           the <code>re</code> module itself,
@@ -25,7 +25,10 @@ const RegexPage = () => {
         </li>
       </ul>
 
-      <p>Start with the basics section on the left.</p>
+      <p>
+        Regular expressions are awesome. Start with the basics section on the
+        left.
+      </p>
     </div>
   );
 };
