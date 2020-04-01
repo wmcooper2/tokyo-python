@@ -1,0 +1,29 @@
+.comparison-section {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid white;
+}
+
+.comparison {
+  display: flex;
+  flex-direction: row;
+}
+
+.comparison-section h2,
+.comparison h3 {
+  margin: 0 0;
+}
+
+.left-half,
+.right-half {
+  width: 50%;
+  height: auto;
+}
+
+.syntax-concept {
+}
+
+.comparison.code.examples {
+  display: flex;
+  flex-direction: column;
+}

@@ -65,7 +65,7 @@ input[type="submit"] {
 input::placeholder,
 textarea::placeholder {
   color: var(--font-color);
-  opacity: 40%;
+  /* opacity: 90%; */
 }
 
 textarea::placeholder {

@@ -3,6 +3,7 @@
 @import "sequences.css";
 @import "basics.css";
 @import "contact.css";
+@import "comparison.css";
 
 :root {
   font-size: 20px;

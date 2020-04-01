@@ -7,7 +7,7 @@ import ContactPage from "./pages/contact";
 import ExamplesPage from "./pages/examples";
 import HomePage from "./pages/home";
 import HowToPage from "./pages/howto";
-import JavascriptPage from "./pages/javascript";
+import JavascriptPage from "./pages/javascript-page";
 import MatchPage from "./pages/match";
 import MeetupPage from "./pages/meetup";
 import PatternPage from "./pages/pattern";
