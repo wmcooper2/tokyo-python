@@ -24,7 +24,7 @@ const BasicConcepts = props => {
 const BasicsPage = () => {
   return (
     <div className="topic-page">
-      <h1>Basic Concepts</h1>
+      <h1 className="left-align">Basic Concepts</h1>
       <BasicConcepts {...basicConcepts} />
     </div>
   );

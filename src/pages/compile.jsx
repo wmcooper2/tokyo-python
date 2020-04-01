@@ -15,7 +15,7 @@ const Examples = () => {
 const CompilePage = () => {
   return (
     <div className="topic-page">
-      <h1>Compile Page</h1>
+      <h1 className="left-align">Compile Page</h1>
       <p>
         The <code>re.compile(pattern)</code> method returns a{" "}
         <strong>'compiled regular expression object'</strong>. It is the

@@ -3,7 +3,7 @@ import React from "react";
 const YahooLodgePage = () => {
   return (
     <div className="topic-page">
-      <h1>Yahoo Lodge Page</h1>
+      <h1 className="left-align">Yahoo Lodge Page</h1>
       <p>
         Stuff to add
         <ul>

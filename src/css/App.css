@@ -1,7 +1,7 @@
-@import "sequences.css";
 @import "topics.css";
-@import "basics.css";
 @import "tables.css";
+@import "sequences.css";
+@import "basics.css";
 @import "contact.css";
 
 :root {
@@ -27,7 +27,7 @@
   --link-color: rgba(255, 255, 255, 1);
   --nav-bar-color: rgba(2, 126, 22, 0.918);
   --header-color-hover: rgba(255, 255, 255, 0.1);
-  --header-height: 2rem;
+  /* --header-height: 2rem; */
   --header-min-height: 3rem;
 
   /* topic nav bar */
@@ -77,20 +77,13 @@ a {
   color: var(--link-color);
 }
 
-h1,
-h2 {
-  /* margin-top: 0px; */
-  /* margin-bottom: 0px; */
+h1 {
   margin: 0 auto;
 }
 
-/* h2 { */
-/* margin-bottom: 0px; */
-/* } */
-
-/* p { */
-/* background-color: white; */
-/* } */
+h1.left-align {
+  margin-left: 0px;
+}
 
 p,
 ul {

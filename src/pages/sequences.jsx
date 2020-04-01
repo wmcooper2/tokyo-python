@@ -11,7 +11,9 @@ const AsciiTable = props => {
       onMouseEnter={() => handleMouseEnter(index)}
       onMouseLeave={() => handleMouseLeave(index)}
       style={
-        chars.includes(item.dec) ? { backgroundColor: "lightgreen" } : null
+        chars.includes(item.dec)
+          ? { backgroundColor: "lightblue", color: "black" }
+          : null
       }
     >
       {item.char}
@@ -82,7 +84,8 @@ class Sequences extends React.Component {
     let details = this.state.details;
     return (
       <React.Fragment>
-        <div className="topic-page centered-columns">
+        {/* <div className="sequences topic-page centered-columns"> */}
+        <div className="sequences topic-page">
           <h1 className="sequences-title">Special Sequences</h1>
           {/* <h2>The first 128 ASCII code points</h2> */}
           <div className="encodings">

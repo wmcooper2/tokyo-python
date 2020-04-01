@@ -6,7 +6,7 @@ import { matchMethods, matchAttributes } from "./data/re-match-data";
 const MatchPage = () => {
   return (
     <div className="topic-page">
-      <h1>Match Objects</h1>
+      <h1 className="left-align">Match Objects</h1>
       <p>
         The <code>match</code> <strong>object</strong> is the result of your
         regular expression searching.

@@ -3,13 +3,12 @@ import React from "react";
 const HomePage = () => {
   return (
     <div className="topic-page">
-      <h1>Home Page</h1>
-      <p>This is a wireframe for Tokyo Python Society Club</p>
+      <h1 className="left-align">Home Page</h1>
       <p>
-        Just in case anyone else reads this... Events/meetups are postponed due
-        to the Coronavirus problem.
+        This is a wireframe for Tokyo Python Society Club. Just in case anyone
+        else reads this... Events/meetups are postponed due to the Coronavirus
+        problem. Parts of the site with some functionality/content;
       </p>
-      <p>Parts of the site with some functionality/content;</p>
       <ul>
         <strong>Regex</strong>
         <ul>

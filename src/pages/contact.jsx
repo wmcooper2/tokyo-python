@@ -2,7 +2,8 @@ import React from "react";
 
 const EmailForm = () => {
   return (
-    <div className="frosted-glass">
+    // <div className="frosted-glass">
+    <div>
       <form
         action="https://wmcooper2.com/tokyo-python/send"
         method="post"
@@ -39,12 +40,12 @@ const EmailForm = () => {
 const ContactPage = () => {
   return (
     <div className="contact topic-page">
-      <h1>Contact Page</h1>
+      {/* <h1>Contact Page</h1> */}
+      <EmailForm />
       <p>
         Add something that spambots can't automatically input so that I know
         you're not a robot spamming me. Captchas?
       </p>
-      <EmailForm />
     </div>
   );
 };

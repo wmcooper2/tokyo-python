@@ -1,4 +1,5 @@
-// dec: "blank", hex: "blank", name: "blank", char: "blank"
+// Basic structure;
+// dec: String, hex: String, name: String, char: String
 const asciiData = [
   { char: "\x00", name: "Null", hex: "00", dec: 0 },
   { char: "\x01", name: "Start of heading", hex: "01", dec: 1 },
@@ -130,6 +131,8 @@ const asciiData = [
   { char: "", name: "", hex: "7F", dec: 127 }
 ];
 
+//Basic Structure:
+// seq: String, id: Integer, description: String, chars: Array[Integer]
 const specialSequences = [
   {
     seq: "\\s",
@@ -229,33 +232,6 @@ const specialSequences = [
     id: 5,
     description: "Any non-whitespace character",
     chars: [
-      0,
-      1,
-      2,
-      3,
-      4,
-      5,
-      6,
-      7,
-      8,
-      14,
-      15,
-      16,
-      17,
-      18,
-      19,
-      20,
-      21,
-      22,
-      23,
-      24,
-      25,
-      26,
-      27,
-      28,
-      29,
-      30,
-      31,
       33,
       34,
       35,
@@ -349,15 +325,14 @@ const specialSequences = [
       123,
       124,
       125,
-      126,
-      127
+      126
     ]
   },
 
   {
     seq: "\\D",
     id: 6,
-    description: "Any non-digit [^0-9]",
+    description: "Any non-digit character [^0-9]",
     chars: [
       32,
       33,
@@ -493,15 +468,14 @@ const specialSequences = [
     seq: "\\B",
     id: 8,
     description:
-      "Non word boundary. So basically the boundaries between letters. Empty string not at beginning or end of a word.",
+      "Non-word BOUNDARY. So basically the boundaries BETWEEN word characters.",
     chars: []
   },
 
   {
     seq: "\\number",
     id: 9,
-    description:
-      "A group number. Matches contents of a 'captured' group of the same number that you made by using parentheses in your regex. Index starts at 1.",
+    description: "A 'captured-group' number. Index starts at 1.",
     chars: []
   },
 
@@ -525,16 +499,14 @@ const specialSequences = [
   {
     seq: "\\A",
     id: 13,
-    description:
-      "The boundary that is the START of a string. Matches only at the start. The same as '^'.",
+    description: "The BOUNDARY that is the START of a string. The same as '^'.",
     chars: [2]
   },
 
   {
     seq: "\\Z",
     id: 14,
-    description:
-      "The boundary that is the END of a string. Matches only at the end. The same as '$'.",
+    description: "The BOUNDARY that is the END of a string. The same as '$'.",
     chars: [3]
   }
 ];

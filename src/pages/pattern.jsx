@@ -6,7 +6,7 @@ import { patternMethods, patternAttributes } from "./data/pattern-data";
 const PatternPage = () => {
   return (
     <div className="topic-page">
-      <h1>Pattern Objects</h1>
+      <h1 className="left-align">Pattern Objects</h1>
       <p>
         The <code>pattern</code> <strong>object's</strong> method names are
         similar to the ones in the <code>re</code> <strong>module</strong>.
