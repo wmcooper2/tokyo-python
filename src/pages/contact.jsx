@@ -5,7 +5,7 @@ const EmailForm = () => {
     // <div className="frosted-glass">
     <div>
       <form
-        action="https://wmcooper2.com/tokyo-python/send"
+        action="https://tokyopython.com/send"
         method="post"
         enctype="application/x-www-form-urlencoded"
       >
