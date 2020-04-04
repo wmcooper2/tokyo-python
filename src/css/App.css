@@ -4,6 +4,7 @@
 @import "basics.css";
 @import "contact.css";
 @import "comparison.css";
+@import "compile.css";
 
 :root {
   font-size: 20px;
@@ -16,6 +17,7 @@
   --dark-grey: rgba(0, 0, 0, 0.6);
   --opaque-white: rgba(255, 255, 255, 0.8);
   --opaque-black: rgba(0, 0, 0, 0.6);
+  --soft-opaque-white: rgba(255, 255, 255, 0.4);
 
   /* component/tag colors */
   --text-bg-color: rgba(255, 255, 255, 1);
@@ -29,7 +31,7 @@
   --nav-bar-color: rgba(2, 126, 22, 0.918);
   --header-color-hover: rgba(255, 255, 255, 0.1);
   /* --header-height: 2rem; */
-  --header-min-height: 3rem;
+  --header-min-height: 5rem;
 
   /* topic nav bar */
   --topic-nav-color: rgba(255, 255, 255, 1);
@@ -78,8 +80,17 @@ a {
   color: var(--link-color);
 }
 
+a.custom-link {
+  /* background-color: var(--opaque-white); */
+  /* border-bottom: 1px solid white; */
+  border: 1px solid white;
+  border-radius: 6px;
+  padding: 3px;
+}
+
 h1 {
-  margin: 0 auto;
+  /* margin: 0 auto; */
+  margin: auto auto;
 }
 
 h1.left-align {
@@ -101,6 +112,15 @@ code {
   color: var(--code-font-color);
   padding: 0.2rem;
   border-radius: 3px;
+}
+
+.terminal-code pre {
+  border: 1px solid white;
+}
+
+.terminal-code pre code {
+  background-color: transparent;
+  color: white;
 }
 
 header nav {
@@ -126,6 +146,12 @@ nav {
 
 nav:hover {
   filter: opacity(100%);
+  /* background-color: var(--soft-opaque-white); */
+  background-color: white;
+}
+
+nav:hover svg {
+  color: black;
 }
 
 svg {

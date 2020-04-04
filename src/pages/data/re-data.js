@@ -1,6 +1,6 @@
 const reFlags = [
   { short: "re.A", long: "re.ASCII", description: null },
-  { short: null, long: "re.DEBUG", description: null },
+  { short: "(none)", long: "re.DEBUG", description: null },
   { short: "re.I", long: "re.IGNORECASE", description: null },
   { short: "re.L", long: "re.LOCALE", description: null },
   { short: "re.M", long: "re.MULTILINE", description: null },

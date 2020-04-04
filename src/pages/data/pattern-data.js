@@ -1,3 +1,5 @@
+import React from "react";
+
 const patternMethods = [
   {
     method: "search",
@@ -118,7 +120,11 @@ const patternMethods = [
 const patternAttributes = [
   {
     name: "flags",
-    description: "The flags that you passed to 're.compile()'.",
+    description: (
+      <span>
+        The flags that you passed to <code>re.compile()</code>
+      </span>
+    ),
     usage: "pattern.flags",
     "return-value": null,
     examples: {

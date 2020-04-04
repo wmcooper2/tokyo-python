@@ -9,7 +9,7 @@ const Examples = props => {
       {item}
     </span>
   ));
-  return <div className="comparison code">{examples}</div>;
+  return <div className="comparison-code">{examples}</div>;
 };
 
 const Left = props => {

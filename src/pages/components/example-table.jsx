@@ -11,13 +11,13 @@ const ExampleTable = props => {
       </thead>
       <tbody>
         <tr>
-          <td className="cell-label">Regex:</td>
+          <td className="cell-label">This:</td>
           <td>
             <code className="regex-code">{value.reg}</code>
           </td>
         </tr>
         <tr>
-          <td className="cell-label">Result:</td>
+          <td className="cell-label">Or this:</td>
           <td>
             <code className="regex-result">{value.result}</code>
           </td>

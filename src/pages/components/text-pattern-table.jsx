@@ -5,8 +5,11 @@ const TextPatternTable = props => {
     <table className="text-pattern-table">
       <thead>
         <tr>
+          <th>Inputs</th>
+        </tr>
+        <tr>
           <th className="cell-label">Text</th>
-          <th className="cell-label">Pattern</th>
+          <th className="cell-label">Regex</th>
         </tr>
       </thead>
       <tbody>
@@ -15,7 +18,7 @@ const TextPatternTable = props => {
             <code className="regex-text">{props.text}</code>
           </td>
           <td>
-            <code className="regex-pattern">{props.pattern}</code>
+            <code className="regex-pattern">{props.regex}</code>
           </td>
         </tr>
       </tbody>

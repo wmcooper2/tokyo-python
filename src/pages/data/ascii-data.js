@@ -34,38 +34,38 @@ const asciiData = [
   { char: "\x1e", name: "Record separator", hex: "1E", dec: 30 },
   { char: "\x1f", name: "Unit separator", hex: "1F", dec: 31 },
   { char: " ", name: "Space", hex: "20", dec: 32 },
-  { char: "!", name: "!", hex: "21", dec: 33 },
-  { char: '"', name: '"', hex: "22", dec: 34 },
-  { char: "#", name: "#", hex: "23", dec: 35 },
-  { char: "$", name: "$", hex: "24", dec: 36 },
-  { char: "%", name: "%", hex: "25", dec: 37 },
-  { char: "&", name: "&", hex: "26", dec: 38 },
-  { char: "'", name: "'", hex: "27", dec: 39 },
-  { char: "(", name: "(", hex: "28", dec: 40 },
-  { char: ")", name: ")", hex: "29", dec: 41 },
-  { char: "*", name: "*", hex: "2A", dec: 42 },
-  { char: "+", name: "+", hex: "2B", dec: 43 },
-  { char: ",", name: ",", hex: "2C", dec: 44 },
-  { char: "-", name: "-", hex: "2D", dec: 45 },
-  { char: ".", name: ".", hex: "2E", dec: 46 },
-  { char: "/", name: "/", hex: "2F", dec: 47 },
-  { char: "0", name: "0", hex: "30", dec: 48 },
-  { char: "1", name: "1", hex: "31", dec: 49 },
-  { char: "2", name: "2", hex: "32", dec: 50 },
-  { char: "3", name: "3", hex: "33", dec: 51 },
-  { char: "4", name: "4", hex: "34", dec: 52 },
-  { char: "5", name: "5", hex: "35", dec: 53 },
-  { char: "6", name: "6", hex: "36", dec: 54 },
-  { char: "7", name: "7", hex: "37", dec: 55 },
-  { char: "8", name: "8", hex: "38", dec: 56 },
-  { char: "9", name: "9", hex: "39", dec: 57 },
-  { char: ":", name: ":", hex: "3A", dec: 58 },
-  { char: ";", name: ";", hex: "3B", dec: 59 },
-  { char: "<", name: "<", hex: "3C", dec: 60 },
-  { char: "=", name: "=", hex: "3D", dec: 61 },
-  { char: ">", name: ">", hex: "3E", dec: 62 },
-  { char: "?", name: "?", hex: "3F", dec: 63 },
-  { char: "@", name: "@", hex: "40", dec: 64 },
+  { char: "!", name: "Exclamation", hex: "21", dec: 33 },
+  { char: '"', name: "Double quote", hex: "22", dec: 34 },
+  { char: "#", name: "Hash", hex: "23", dec: 35 },
+  { char: "$", name: "Dollar", hex: "24", dec: 36 },
+  { char: "%", name: "Percent", hex: "25", dec: 37 },
+  { char: "&", name: "Ampersand", hex: "26", dec: 38 },
+  { char: "'", name: "Single quote", hex: "27", dec: 39 },
+  { char: "(", name: "Left Parenthesis", hex: "28", dec: 40 },
+  { char: ")", name: "Right Parenthesis", hex: "29", dec: 41 },
+  { char: "*", name: "Asterisk", hex: "2A", dec: 42 },
+  { char: "+", name: "Plus", hex: "2B", dec: 43 },
+  { char: ",", name: "Comma", hex: "2C", dec: 44 },
+  { char: "-", name: "Hyphen", hex: "2D", dec: 45 },
+  { char: ".", name: "Period", hex: "2E", dec: 46 },
+  { char: "/", name: "Forward slash", hex: "2F", dec: 47 },
+  { char: "0", name: "Zero", hex: "30", dec: 48 },
+  { char: "1", name: "One", hex: "31", dec: 49 },
+  { char: "2", name: "Two", hex: "32", dec: 50 },
+  { char: "3", name: "Three", hex: "33", dec: 51 },
+  { char: "4", name: "Four", hex: "34", dec: 52 },
+  { char: "5", name: "Five", hex: "35", dec: 53 },
+  { char: "6", name: "Six", hex: "36", dec: 54 },
+  { char: "7", name: "Seven", hex: "37", dec: 55 },
+  { char: "8", name: "Eight", hex: "38", dec: 56 },
+  { char: "9", name: "Nine", hex: "39", dec: 57 },
+  { char: ":", name: "Colon", hex: "3A", dec: 58 },
+  { char: ";", name: "Semicolon", hex: "3B", dec: 59 },
+  { char: "<", name: "Less than", hex: "3C", dec: 60 },
+  { char: "=", name: "Equal", hex: "3D", dec: 61 },
+  { char: ">", name: "Greater than", hex: "3E", dec: 62 },
+  { char: "?", name: "Question", hex: "3F", dec: 63 },
+  { char: "@", name: "At symbol", hex: "40", dec: 64 },
   { char: "A", name: "A", hex: "41", dec: 65 },
   { char: "B", name: "B", hex: "42", dec: 66 },
   { char: "C", name: "C", hex: "43", dec: 67 },
@@ -92,12 +92,12 @@ const asciiData = [
   { char: "X", name: "X", hex: "58", dec: 88 },
   { char: "Y", name: "Y", hex: "59", dec: 89 },
   { char: "Z", name: "Z", hex: "5A", dec: 90 },
-  { char: "[", name: "[", hex: "5B", dec: 91 },
-  { char: "\\", name: "\\", hex: "5C", dec: 92 },
-  { char: "]", name: "]", hex: "5D", dec: 93 },
-  { char: "^", name: "^", hex: "5E", dec: 94 },
-  { char: "_", name: "_", hex: "5F", dec: 95 },
-  { char: "`", name: "`", hex: "60", dec: 96 },
+  { char: "[", name: "Left bracket", hex: "5B", dec: 91 },
+  { char: "\\", name: "Backslash", hex: "5C", dec: 92 },
+  { char: "]", name: "Right bracket", hex: "5D", dec: 93 },
+  { char: "^", name: "Caret", hex: "5E", dec: 94 },
+  { char: "_", name: "Underscore", hex: "5F", dec: 95 },
+  { char: "`", name: "Backtick", hex: "60", dec: 96 },
   { char: "a", name: "a", hex: "61", dec: 97 },
   { char: "b", name: "b", hex: "62", dec: 98 },
   { char: "c", name: "c", hex: "63", dec: 99 },
@@ -124,11 +124,11 @@ const asciiData = [
   { char: "x", name: "x", hex: "78", dec: 120 },
   { char: "y", name: "y", hex: "79", dec: 121 },
   { char: "z", name: "z", hex: "7A", dec: 122 },
-  { char: "{", name: "{", hex: "7B", dec: 123 },
-  { char: "|", name: "|", hex: "7C", dec: 124 },
-  { char: "}", name: "}", hex: "7D", dec: 125 },
-  { char: "~", name: "~", hex: "7E", dec: 126 },
-  { char: "", name: "", hex: "7F", dec: 127 }
+  { char: "{", name: "Left brace", hex: "7B", dec: 123 },
+  { char: "|", name: "Separator bar", hex: "7C", dec: 124 },
+  { char: "}", name: "Right brace", hex: "7D", dec: 125 },
+  { char: "~", name: "Tilde", hex: "7E", dec: 126 },
+  { char: "", name: "???", hex: "7F", dec: 127 }
 ];
 
 //Basic Structure:
@@ -137,7 +137,7 @@ const specialSequences = [
   {
     seq: "\\s",
     id: 1,
-    description: "Any whitespace character.",
+    description: "Any whitespace character",
     chars: [9, 10, 11, 12, 13, 32]
   },
 
@@ -151,7 +151,7 @@ const specialSequences = [
   {
     seq: "\\w",
     id: 3,
-    description: "Any word character, [A-Za-z0-9_]",
+    description: "Any word character [A-Za-z0-9_]",
     chars: [
       48,
       49,
@@ -222,7 +222,7 @@ const specialSequences = [
   {
     seq: "\\b",
     id: 4,
-    description: "Word BOUNDARY.",
+    description: "Word BOUNDARY",
     chars: []
   },
 
@@ -466,14 +466,14 @@ const specialSequences = [
   {
     seq: "\\B",
     id: 8,
-    description: "Non-word BOUNDARY.",
+    description: "Non-word BOUNDARY",
     chars: []
   },
 
   {
     seq: "\\number",
     id: 9,
-    description: "A 'captured-group' number. Index starts at 1.",
+    description: "A 'captured-group' number (index starts at 1)",
     chars: []
   },
 
@@ -489,21 +489,21 @@ const specialSequences = [
   {
     seq: "[\\b]",
     id: 12,
-    description: "A backspace.",
+    description: "A backspace",
     chars: []
   },
 
   {
     seq: "\\A",
     id: 13,
-    description: "The BOUNDARY that is the START of a string '^'.",
+    description: "The BOUNDARY that is the START of a string (^)",
     chars: [2]
   },
 
   {
     seq: "\\Z",
     id: 14,
-    description: "The BOUNDARY that is the END of a string '$'.",
+    description: "The BOUNDARY that is the END of a string ($)",
     chars: [3]
   }
 ];

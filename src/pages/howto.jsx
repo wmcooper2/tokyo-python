@@ -12,7 +12,9 @@ const sites = [
 
 const sitesList = sites.map((item, index) => (
   <li key={index}>
-    <a href={item.url}>{item.name}</a>
+    <a className="custom-link" href={item.url}>
+      {item.name}
+    </a>
   </li>
 ));
 
@@ -23,13 +25,19 @@ const HowTo = () => {
       <p>
         How to make a regular expression is a very difficult thing to answer. I
         have read a lot of material on the subject, and I am far from being an
-        expert.
+        expert. I'll do what I can to help explain the basics, but beyond that
+        you just have to play with them to find out for yourself.
       </p>
       <p>
-        I do recommend reading this{" "}
-        <a href="https://www.amazon.com/Jeffrey-E-F-Friedl/e/B000APS5VQ/ref=dp_byline_cont_book_1">
-          book.
-        </a>
+        I do recommend reading{" "}
+        <a
+          className="custom-link"
+          href="https://www.amazon.com/Jeffrey-E-F-Friedl/e/B000APS5VQ/ref=dp_byline_cont_book_1"
+        >
+          this book.
+        </a>{" "}
+        It's really detailed and can be difficult to read, but if you're really
+        interested in regexes then it's worth it.
       </p>
       <p>
         Here is a collection of sites that I find useful for regular

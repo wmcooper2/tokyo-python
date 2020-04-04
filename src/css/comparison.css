@@ -1,24 +1,29 @@
-.comparison-title {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  width: 100%;
-}
-
 .comparison-section {
   display: flex;
   flex-direction: column;
-  border: 1px solid white;
+  /* border: 1px solid white; */
+  /* margin: 10px 0px; */
+  /* height: 50vh; */
 }
 
 .comparison {
   display: flex;
   flex-direction: row;
+  border: 1px solid white;
+  min-height: 40vh;
 }
 
 .comparison-section h2,
 .comparison h3 {
-  margin: 0 0;
+  /* margin: 0 0; */
+  /* margin: 0 0; */
+}
+
+.comparison-title {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
 }
 
 .left-half,
@@ -27,15 +32,15 @@
   height: auto;
 }
 
-.comparison.code {
+.comparison-code {
   display: flex;
   flex-direction: column;
-  background-color: var(--opaque-black);
+  /* background-color: var(--opaque-black); */
   /* max-height: 100%; */
-  min-height: 150px;
+  /* min-height: 150px; */
 }
 
-.comparison.code code {
+.comparison-code code {
   color: white;
   background-color: transparent;
   /* height: 100%; */

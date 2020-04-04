@@ -5,10 +5,10 @@ const FlagsTable = props => {
   const flagRows = data.map((item, index) => (
     <tr key={index}>
       <td>
-        <code className="attr-short">{item.short}</code>
+        <code>{item.short}</code>
       </td>
       <td>
-        <code className="attr-long">{item.long}</code>
+        <code>{item.long}</code>
       </td>
     </tr>
   ));
