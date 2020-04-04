@@ -1,7 +1,6 @@
 import React from "react";
 
 const MethodTable = props => {
-  console.log("MethodTable: ", props);
   //props is a method table data structure
   //see re-data.js as an example
   const { data } = props;

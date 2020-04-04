@@ -59,7 +59,345 @@ const basicConcepts = {
   }
 };
 
-export default basicConcepts;
+const basicCharacters = [
+  {
+    character: ".",
+    description: null,
+    usage: null,
+    "return-value": null,
+    examples: {
+      1: {},
+      2: {},
+      3: {}
+    }
+  },
+
+  {
+    character: "^",
+    description: null,
+    usage: null,
+    "return-value": null,
+    examples: {
+      1: {},
+      2: {},
+      3: {}
+    }
+  },
+
+  {
+    character: "$",
+    description: null,
+    usage: null,
+    "return-value": null,
+    examples: {
+      1: {},
+      2: {},
+      3: {}
+    }
+  },
+
+  {
+    character: "*",
+    description: null,
+    usage: null,
+    "return-value": null,
+    examples: {
+      1: {},
+      2: {},
+      3: {}
+    }
+  },
+
+  {
+    character: "+",
+    description: null,
+    usage: null,
+    "return-value": null,
+    examples: {
+      1: {},
+      2: {},
+      3: {}
+    }
+  },
+
+  {
+    character: "?",
+    description: null,
+    usage: null,
+    "return-value": null,
+    examples: {
+      1: {},
+      2: {},
+      3: {}
+    }
+  },
+
+  {
+    character: "*?",
+    description: null,
+    usage: null,
+    "return-value": null,
+    examples: {
+      1: {},
+      2: {},
+      3: {}
+    }
+  },
+
+  {
+    character: "+?",
+    description: null,
+    usage: null,
+    "return-value": null,
+    examples: {
+      1: {},
+      2: {},
+      3: {}
+    }
+  },
+
+  {
+    character: "??",
+    description: null,
+    usage: null,
+    "return-value": null,
+    examples: {
+      1: {},
+      2: {},
+      3: {}
+    }
+  },
+
+  {
+    character: "{m}",
+    description: null,
+    usage: null,
+    "return-value": null,
+    examples: {
+      1: {},
+      2: {},
+      3: {}
+    }
+  },
+
+  {
+    character: "{m,n}",
+    description: null,
+    usage: null,
+    "return-value": null,
+    examples: {
+      1: {},
+      2: {},
+      3: {}
+    }
+  },
+
+  {
+    character: "{m,n}?",
+    description: null,
+    usage: null,
+    "return-value": null,
+    examples: {
+      1: {},
+      2: {},
+      3: {}
+    }
+  },
+
+  {
+    character: "\\",
+    description: null,
+    usage: null,
+    "return-value": null,
+    examples: {
+      1: {},
+      2: {},
+      3: {}
+    }
+  },
+
+  {
+    character: "|",
+    description: null,
+    usage: null,
+    "return-value": null,
+    examples: {
+      1: {},
+      2: {},
+      3: {}
+    }
+  },
+
+  {
+    character: "[...]",
+    description: null,
+    usage: null,
+    "return-value": null,
+    examples: {
+      1: {},
+      2: {},
+      3: {}
+    }
+  },
+
+  {
+    character: "(...)",
+    description: null,
+    usage: null,
+    "return-value": null,
+    examples: {
+      1: {},
+      2: {},
+      3: {}
+    }
+  },
+
+  {
+    character: "(?...)",
+    description: null,
+    usage: null,
+    "return-value": null,
+    examples: {
+      1: {},
+      2: {},
+      3: {}
+    }
+  },
+
+  {
+    character: "(?:...)",
+    description: null,
+    usage: null,
+    "return-value": null,
+    examples: {
+      1: {},
+      2: {},
+      3: {}
+    }
+  },
+
+  {
+    character: "(?#...)",
+    description: null,
+    usage: null,
+    "return-value": null,
+    examples: {
+      1: {},
+      2: {},
+      3: {}
+    }
+  },
+
+  {
+    character: "(?=...)",
+    description: null,
+    usage: null,
+    "return-value": null,
+    examples: {
+      1: {},
+      2: {},
+      3: {}
+    }
+  },
+
+  {
+    character: "(?!...)",
+    description: null,
+    usage: null,
+    "return-value": null,
+    examples: {
+      1: {},
+      2: {},
+      3: {}
+    }
+  },
+
+  {
+    character: "(?<=...)",
+    description: null,
+    usage: null,
+    "return-value": null,
+    examples: {
+      1: {},
+      2: {},
+      3: {}
+    }
+  },
+
+  {
+    character: "(?<!...)",
+    description: null,
+    usage: null,
+    "return-value": null,
+    examples: {
+      1: {},
+      2: {},
+      3: {}
+    }
+  },
+
+  {
+    character: "(?P<name>...)",
+    description: null,
+    usage: null,
+    "return-value": null,
+    examples: {
+      1: {},
+      2: {},
+      3: {}
+    }
+  },
+
+  {
+    character: "(?P=name)",
+    description: null,
+    usage: null,
+    "return-value": null,
+    examples: {
+      1: {},
+      2: {},
+      3: {}
+    }
+  },
+
+  {
+    character: "(?(id/name)yes-pattern|no-pattern)",
+    description: null,
+    usage: null,
+    "return-value": null,
+    examples: {
+      1: {},
+      2: {},
+      3: {}
+    }
+  },
+
+  {
+    character: "(?aiLmsux)",
+    description: null,
+    usage: null,
+    "return-value": null,
+    examples: {
+      1: {},
+      2: {},
+      3: {}
+    }
+  },
+
+  {
+    character: "(?aiLmsux-imsx:...)",
+    description: null,
+    usage: null,
+    "return-value": null,
+    examples: {
+      1: {},
+      2: {},
+      3: {}
+    }
+  }
+];
+
+export { basicConcepts, basicCharacters };
 //examples object keys are the main points in the documentation like
 // re.compile becomes "compile" and is a key in the examples object
 
