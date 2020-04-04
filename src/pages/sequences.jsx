@@ -84,11 +84,20 @@ class Sequences extends React.Component {
     let details = this.state.details;
     return (
       <React.Fragment>
-        {/* <div className="sequences topic-page centered-columns"> */}
-
         <div className="sequences topic-page">
           <h1 className="sequences-title">Special Sequences</h1>
-          {/* <h2>The first 128 ASCII code points</h2> */}
+          <p>
+            I gave the sequences their own page so that it would be easier to
+            show the groups of ascii characters that relate to the sequences
+            easier. Some sequences don't match an ascii character directly, so
+            you will see that none of the characters are highlighted when you
+            click on the sequence.
+          </p>
+          <p>
+            Hover over the characters to see more details about them. Click the
+            sequences below for a short description of each and which characters
+            they relate to.
+          </p>
           <div className="encodings">
             {/* maybe shouldn't do encoding buttons... too many characters?  Just stick with ASCII...*/}
             <button className="encoding">ASCII</button>

@@ -3,7 +3,7 @@ import React from "react";
 const MeetupPage = () => {
   return (
     <div className="topic-page">
-      <h1 className="left-align">Meetup Page</h1>
+      <h1 className="left-align">Meetup</h1>
       <p>Stuff to add</p>
       <ul>
         <li>

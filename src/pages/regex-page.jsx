@@ -3,7 +3,7 @@ import React from "react";
 const RegexPage = () => {
   return (
     <div className="topic-page">
-      <h1 className="left-align">Regex Page</h1>
+      <h1 className="left-align">Regular Expressions</h1>
       <p>
         This is meant to be summary of the official documentation. When learning
         about regular expressions in Python, there are 4 major points that you

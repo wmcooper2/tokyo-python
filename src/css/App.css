@@ -5,6 +5,7 @@
 @import "contact.css";
 @import "comparison.css";
 @import "compile.css";
+@import "examples.css";
 
 :root {
   font-size: 20px;

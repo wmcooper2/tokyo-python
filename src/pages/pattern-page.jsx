@@ -51,8 +51,7 @@ const PatternPage = () => {
         In <code>text1</code>, a match was found beginning at index 7. In{" "}
         <code>text2</code> a match was found beginning at index 12. Notice that
         I used the <code>search</code> <strong>method</strong> on a{" "}
-        <code>pattern</code> <strong>object</strong>. This is a very simple
-        example.
+        <code>pattern</code> <strong>object</strong>.
       </p>
     </div>
   );

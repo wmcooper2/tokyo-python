@@ -38,6 +38,8 @@ const BasicsPage = () => {
         brackets to be more consistent with how the others are displayed.
       </p>
       <CodeDescriptionTable data={basicCharacters} />
+      <h2>Special Sequences</h2>
+      <p>See the "sequences" subtopic link on the left.</p>
     </div>
   );
 };

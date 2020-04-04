@@ -1,0 +1,12 @@
+pre.example code {
+  background-color: transparent;
+  color: white;
+}
+
+.match {
+  background-color: lightgreen;
+}
+
+.nomatch {
+  background-color: lightcoral;
+}

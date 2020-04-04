@@ -1,6 +1,6 @@
 import React from "react";
 import About from "./pages/about";
-import BasicsPage from "./pages/basics";
+import BasicsPage from "./pages/basics-page";
 import ComparisonsPage from "./pages/comparisons";
 import CompilePage from "./pages/compile-page";
 import ContactPage from "./pages/contact";

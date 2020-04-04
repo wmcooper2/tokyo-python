@@ -1,23 +1,20 @@
 import React from "react";
 
 const CodeDescriptionTable = props => {
-  console.log("Description: ", props);
   const { data } = props;
   const rows = data.map((item, index) => (
-    <tr key={index}>
-      <td>
-        <code>{item.character}</code>
-      </td>
-    </tr>
+    <React.Fragment key={index}>
+      <tr>
+        <td>
+          <code>{item.character}</code>
+        </td>
+        <td>{item.description}</td>
+      </tr>
+    </React.Fragment>
   ));
 
   let table = (
     <table>
-      <thead>
-        <tr>
-          <td>header</td>
-        </tr>
-      </thead>
       <tbody>{rows}</tbody>
     </table>
   );

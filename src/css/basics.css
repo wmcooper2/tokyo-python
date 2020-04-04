@@ -12,3 +12,15 @@
   max-width: 15vw;
   padding: 0px;
 }
+
+code.special-character {
+  background-color: transparent;
+}
+
+.match {
+  background-color: lightgreen;
+}
+
+.nomatch {
+  background-color: lightcoral;
+}

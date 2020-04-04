@@ -21,7 +21,7 @@ const sitesList = sites.map((item, index) => (
 const HowTo = () => {
   return (
     <div className="topic-page">
-      <h1 className="left-align">How To Page</h1>
+      <h1 className="left-align">How To</h1>
       <p>
         How to make a regular expression is a very difficult thing to answer. I
         have read a lot of material on the subject, and I am far from being an

@@ -62,38 +62,37 @@ const basicConcepts = {
 const basicCharacters = [
   {
     character: ".",
-    description: null,
+    description: (
+      <span>
+        Basically <code>[^\n]</code>. Changes with with <code>re.S</code> flag.
+      </span>
+    ),
     usage: null,
     "return-value": null,
-    examples: {
-      1: {},
-      2: {},
-      3: {}
-    }
   },
 
   {
     character: "^",
-    description: null,
+    description: (
+      <span>
+        Changes with <code>re.M</code> flag.
+      </span>
+    ),
     usage: null,
     "return-value": null,
-    examples: {
-      1: {},
-      2: {},
-      3: {}
-    }
+    examples: [{}, {}, {}]
   },
 
   {
     character: "$",
-    description: null,
+    description: (
+      <span>
+        Changes with <code>re.M</code> flag.
+      </span>
+    ),
     usage: null,
     "return-value": null,
-    examples: {
-      1: {},
-      2: {},
-      3: {}
-    }
+    examples: [{}, {}, {}]
   },
 
   {
@@ -101,11 +100,7 @@ const basicCharacters = [
     description: null,
     usage: null,
     "return-value": null,
-    examples: {
-      1: {},
-      2: {},
-      3: {}
-    }
+    examples: [{}, {}, {}]
   },
 
   {
@@ -113,11 +108,7 @@ const basicCharacters = [
     description: null,
     usage: null,
     "return-value": null,
-    examples: {
-      1: {},
-      2: {},
-      3: {}
-    }
+    examples: [{}, {}, {}]
   },
 
   {
@@ -125,11 +116,7 @@ const basicCharacters = [
     description: null,
     usage: null,
     "return-value": null,
-    examples: {
-      1: {},
-      2: {},
-      3: {}
-    }
+    examples: [{}, {}, {}]
   },
 
   {
@@ -137,11 +124,7 @@ const basicCharacters = [
     description: null,
     usage: null,
     "return-value": null,
-    examples: {
-      1: {},
-      2: {},
-      3: {}
-    }
+    examples: [{}, {}, {}]
   },
 
   {
@@ -149,11 +132,7 @@ const basicCharacters = [
     description: null,
     usage: null,
     "return-value": null,
-    examples: {
-      1: {},
-      2: {},
-      3: {}
-    }
+    examples: [{}, {}, {}]
   },
 
   {
@@ -161,11 +140,7 @@ const basicCharacters = [
     description: null,
     usage: null,
     "return-value": null,
-    examples: {
-      1: {},
-      2: {},
-      3: {}
-    }
+    examples: [{}, {}, {}]
   },
 
   {
@@ -173,11 +148,7 @@ const basicCharacters = [
     description: null,
     usage: null,
     "return-value": null,
-    examples: {
-      1: {},
-      2: {},
-      3: {}
-    }
+    examples: [{}, {}, {}]
   },
 
   {
@@ -185,11 +156,7 @@ const basicCharacters = [
     description: null,
     usage: null,
     "return-value": null,
-    examples: {
-      1: {},
-      2: {},
-      3: {}
-    }
+    examples: [{}, {}, {}]
   },
 
   {
@@ -197,11 +164,7 @@ const basicCharacters = [
     description: null,
     usage: null,
     "return-value": null,
-    examples: {
-      1: {},
-      2: {},
-      3: {}
-    }
+    examples: [{}, {}, {}]
   },
 
   {
@@ -209,11 +172,7 @@ const basicCharacters = [
     description: null,
     usage: null,
     "return-value": null,
-    examples: {
-      1: {},
-      2: {},
-      3: {}
-    }
+    examples: [{}, {}, {}]
   },
 
   {
@@ -221,11 +180,7 @@ const basicCharacters = [
     description: null,
     usage: null,
     "return-value": null,
-    examples: {
-      1: {},
-      2: {},
-      3: {}
-    }
+    examples: [{}, {}, {}]
   },
 
   {
@@ -233,11 +188,7 @@ const basicCharacters = [
     description: null,
     usage: null,
     "return-value": null,
-    examples: {
-      1: {},
-      2: {},
-      3: {}
-    }
+    examples: [{}, {}, {}]
   },
 
   {
@@ -245,11 +196,7 @@ const basicCharacters = [
     description: null,
     usage: null,
     "return-value": null,
-    examples: {
-      1: {},
-      2: {},
-      3: {}
-    }
+    examples: [{}, {}, {}]
   },
 
   {
@@ -257,11 +204,7 @@ const basicCharacters = [
     description: null,
     usage: null,
     "return-value": null,
-    examples: {
-      1: {},
-      2: {},
-      3: {}
-    }
+    examples: [{}, {}, {}]
   },
 
   {
@@ -269,11 +212,7 @@ const basicCharacters = [
     description: null,
     usage: null,
     "return-value": null,
-    examples: {
-      1: {},
-      2: {},
-      3: {}
-    }
+    examples: [{}, {}, {}]
   },
 
   {
@@ -281,11 +220,7 @@ const basicCharacters = [
     description: null,
     usage: null,
     "return-value": null,
-    examples: {
-      1: {},
-      2: {},
-      3: {}
-    }
+    examples: [{}, {}, {}]
   },
 
   {
@@ -293,11 +228,7 @@ const basicCharacters = [
     description: null,
     usage: null,
     "return-value": null,
-    examples: {
-      1: {},
-      2: {},
-      3: {}
-    }
+    examples: [{}, {}, {}]
   },
 
   {
@@ -305,11 +236,7 @@ const basicCharacters = [
     description: null,
     usage: null,
     "return-value": null,
-    examples: {
-      1: {},
-      2: {},
-      3: {}
-    }
+    examples: [{}, {}, {}]
   },
 
   {
@@ -317,11 +244,7 @@ const basicCharacters = [
     description: null,
     usage: null,
     "return-value": null,
-    examples: {
-      1: {},
-      2: {},
-      3: {}
-    }
+    examples: [{}, {}, {}]
   },
 
   {
@@ -329,11 +252,7 @@ const basicCharacters = [
     description: null,
     usage: null,
     "return-value": null,
-    examples: {
-      1: {},
-      2: {},
-      3: {}
-    }
+    examples: [{}, {}, {}]
   },
 
   {
@@ -341,11 +260,7 @@ const basicCharacters = [
     description: null,
     usage: null,
     "return-value": null,
-    examples: {
-      1: {},
-      2: {},
-      3: {}
-    }
+    examples: [{}, {}, {}]
   },
 
   {
@@ -353,11 +268,7 @@ const basicCharacters = [
     description: null,
     usage: null,
     "return-value": null,
-    examples: {
-      1: {},
-      2: {},
-      3: {}
-    }
+    examples: [{}, {}, {}]
   },
 
   {
@@ -365,11 +276,7 @@ const basicCharacters = [
     description: null,
     usage: null,
     "return-value": null,
-    examples: {
-      1: {},
-      2: {},
-      3: {}
-    }
+    examples: [{}, {}, {}]
   },
 
   {
@@ -377,11 +284,7 @@ const basicCharacters = [
     description: null,
     usage: null,
     "return-value": null,
-    examples: {
-      1: {},
-      2: {},
-      3: {}
-    }
+    examples: [{}, {}, {}]
   },
 
   {
@@ -389,11 +292,7 @@ const basicCharacters = [
     description: null,
     usage: null,
     "return-value": null,
-    examples: {
-      1: {},
-      2: {},
-      3: {}
-    }
+    examples: [{}, {}, {}]
   }
 ];
 

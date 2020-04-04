@@ -3,7 +3,11 @@ import React from "react";
 const HomePage = () => {
   return (
     <div className="topic-page">
-      <h1 className="left-align">Home Page</h1>
+      <h1 className="left-align">Home</h1>
+      <p>
+        If you find any errors (there will be some), then please email me
+        through the "contact" subtopic link on the left. I will fix it.
+      </p>
       <p>
         This is a wireframe for Tokyo Python. Just in case anyone else reads
         this... Events/meetups are postponed due to the Coronavirus problem.
@@ -27,7 +31,7 @@ const HomePage = () => {
         <li>
           Add info about Yahoo Lodge on yahoo topic, link to their calendar.
         </li>
-        <li>Wireframe the comaprison pages left/right vertical columns</li>
+        <li>Add examples and descriptions to the regex pages.</li>
         <li>
           Swap the meetup logo in the navbar with the handshake logo in the
           topic bar.
