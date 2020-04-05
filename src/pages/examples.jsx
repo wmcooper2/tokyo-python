@@ -4,6 +4,7 @@ const ExamplesPage = () => {
   return (
     <div className="topic-page">
       <h1 className="left-align">Examples</h1>
+<p>Note: there are a lot of examples I want to put here, but I need a cleaner layout...</p>
       <p>
         Let's see how "." behaves with the search method like this;
         <br />

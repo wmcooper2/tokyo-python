@@ -5,7 +5,7 @@ const docs = {
   compile: "https://docs.python.org/3/library/re.html#re.compile",
   match: "https://docs.python.org/3/library/re.html#regular-expression-objects",
   pattern:
-    "https://docs.python.org/3/library/re.html#regular-expression-objects"
+    "https://docs.python.org/3/library/re.html#regular-expression-objects",
 };
 
 const basicConcepts = {
@@ -15,7 +15,7 @@ const basicConcepts = {
         <code>re</code> is the module's name.
       </p>
     ),
-    documentation: docs.re
+    documentation: docs.re,
   },
   compile: {
     description: (
@@ -29,7 +29,7 @@ const basicConcepts = {
     "basic-use": "re.compile(pattern)",
     "full-use": "re.compile(pattern, flags=0)",
     "return-value": "re.compile(pattern)",
-    documentation: docs.compile
+    documentation: docs.compile,
   },
 
   pattern: {
@@ -44,7 +44,7 @@ const basicConcepts = {
         <strong>method</strong>. Don't confuse them.
       </p>
     ),
-    documentation: docs.pattern
+    documentation: docs.pattern,
   },
 
   match: {
@@ -55,8 +55,8 @@ const basicConcepts = {
         <strong>object</strong>. Read the docs very carefully.
       </p>
     ),
-    documentation: docs.match
-  }
+    documentation: docs.match,
+  },
 };
 
 const basicCharacters = [
@@ -67,233 +67,145 @@ const basicCharacters = [
         Basically <code>[^\n]</code>. Changes with with <code>re.S</code> flag.
       </span>
     ),
-    usage: null,
-    "return-value": null,
   },
 
   {
     character: "^",
     description: (
       <span>
-        Changes with <code>re.M</code> flag.
+        START BOUNDARY of a string. Changes with <code>re.M</code> flag.
       </span>
     ),
-    usage: null,
-    "return-value": null,
-    examples: [{}, {}, {}]
   },
 
   {
     character: "$",
     description: (
       <span>
-        Changes with <code>re.M</code> flag.
+        END BOUNDARY of a string. Changes with <code>re.M</code> flag.
       </span>
     ),
-    usage: null,
-    "return-value": null,
-    examples: [{}, {}, {}]
   },
 
   {
     character: "*",
-    description: null,
-    usage: null,
-    "return-value": null,
-    examples: [{}, {}, {}]
+    description: "0 or more, greedy",
   },
 
   {
     character: "+",
-    description: null,
-    usage: null,
-    "return-value": null,
-    examples: [{}, {}, {}]
+    description: "1 or more, greedy",
   },
 
   {
     character: "?",
-    description: null,
-    usage: null,
-    "return-value": null,
-    examples: [{}, {}, {}]
+    description: "0 or 1, greedy",
   },
 
   {
     character: "*?",
-    description: null,
-    usage: null,
-    "return-value": null,
-    examples: [{}, {}, {}]
+    description: "0 or more, lazy",
   },
 
   {
     character: "+?",
-    description: null,
-    usage: null,
-    "return-value": null,
-    examples: [{}, {}, {}]
+    description: "1 or more, lazy",
   },
 
   {
     character: "??",
-    description: null,
-    usage: null,
-    "return-value": null,
-    examples: [{}, {}, {}]
+    description: "0 or 1, lazy",
   },
 
   {
     character: "{m}",
-    description: null,
-    usage: null,
-    "return-value": null,
-    examples: [{}, {}, {}]
+    description: "Exactly m",
   },
 
   {
     character: "{m,n}",
-    description: null,
-    usage: null,
-    "return-value": null,
-    examples: [{}, {}, {}]
+    description: "From m to n, inclusive, greedy",
   },
 
   {
     character: "{m,n}?",
-    description: null,
-    usage: null,
-    "return-value": null,
-    examples: [{}, {}, {}]
+    description: "From m to n, inclusive, lazy",
   },
 
   {
     character: "\\",
-    description: null,
-    usage: null,
-    "return-value": null,
-    examples: [{}, {}, {}]
+    description: "Escape character",
   },
 
   {
     character: "|",
-    description: null,
-    usage: null,
-    "return-value": null,
-    examples: [{}, {}, {}]
+    description: "Alternation ('or')",
   },
 
   {
     character: "[...]",
-    description: null,
-    usage: null,
-    "return-value": null,
-    examples: [{}, {}, {}]
+    description: "Any single character in this class",
   },
 
   {
     character: "(...)",
-    description: null,
-    usage: null,
-    "return-value": null,
-    examples: [{}, {}, {}]
-  },
-
-  {
-    character: "(?...)",
-    description: null,
-    usage: null,
-    "return-value": null,
-    examples: [{}, {}, {}]
+    description: "Capturing group",
   },
 
   {
     character: "(?:...)",
-    description: null,
-    usage: null,
-    "return-value": null,
-    examples: [{}, {}, {}]
+    description: "Non-capturing group",
   },
 
   {
     character: "(?#...)",
-    description: null,
-    usage: null,
-    "return-value": null,
-    examples: [{}, {}, {}]
+    description: "Use this to make a comment in a regex",
   },
 
   {
     character: "(?=...)",
-    description: null,
-    usage: null,
-    "return-value": null,
-    examples: [{}, {}, {}]
+    description: "POS look AHEAD",
   },
 
   {
     character: "(?!...)",
-    description: null,
-    usage: null,
-    "return-value": null,
-    examples: [{}, {}, {}]
+    description: "NEG look AHEAD",
   },
 
   {
     character: "(?<=...)",
-    description: null,
-    usage: null,
-    "return-value": null,
-    examples: [{}, {}, {}]
+    description: "POS look BEHIND",
   },
 
   {
     character: "(?<!...)",
-    description: null,
-    usage: null,
-    "return-value": null,
-    examples: [{}, {}, {}]
+    description: "NEG look BEHIND",
   },
 
   {
     character: "(?P<name>...)",
-    description: null,
-    usage: null,
-    "return-value": null,
-    examples: [{}, {}, {}]
+    description: "Assign a name to a capturing group",
   },
 
   {
     character: "(?P=name)",
-    description: null,
-    usage: null,
-    "return-value": null,
-    examples: [{}, {}, {}]
+    description: "Backreference to a named capturing group",
   },
 
   {
-    character: "(?(id/name)yes-pattern|no-pattern)",
+    character: "(?(id/name)yes|no)",
     description: null,
-    usage: null,
-    "return-value": null,
-    examples: [{}, {}, {}]
   },
 
   {
     character: "(?aiLmsux)",
     description: null,
-    usage: null,
-    "return-value": null,
-    examples: [{}, {}, {}]
   },
 
   {
     character: "(?aiLmsux-imsx:...)",
     description: null,
-    usage: null,
-    "return-value": null,
-    examples: [{}, {}, {}]
-  }
+  },
 ];
 
 export { basicConcepts, basicCharacters };
