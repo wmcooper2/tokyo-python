@@ -1,6 +1,11 @@
 import React from "react";
 
 const sites = [
+  {
+    name: "Corey Schafer's Regex Tutorial on YouTube",
+    url: "https://www.youtube.com/watch?v=K8L6KVGG-7o",
+    description: null,
+  },
   { name: "regex101.com", url: "https://regex101.com", description: null },
   {
     name: "regexbuddy.com",
@@ -51,7 +56,6 @@ const HowTo = () => {
         relate to the thing you want to search for. You can find a summarized
         list of special characters at the "basics" subtopic on the left.
       </p>
-      <p>Examples...</p>
     </div>
   );
 };

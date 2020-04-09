@@ -58,15 +58,6 @@ const CompilePage = () => {
         object has its own methods that you will use to search through text
         with. See the "pattern" subtopic link on the left to continue.
       </p>
-      <p>
-        Escaping special characters in a regex is annoying, so I prefer to just
-        use raw strings instead;
-      </p>
-      <div className="terminal-code">
-        <pre>
-          <code>{`example here`}</code>
-        </pre>
-      </div>
     </div>
   );
 };

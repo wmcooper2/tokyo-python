@@ -4,7 +4,8 @@ import BasicsPage from "./pages/basics-page";
 import ComparisonsPage from "./pages/comparisons";
 import CompilePage from "./pages/compile-page";
 import ContactPage from "./pages/contact";
-import ExamplesPage from "./pages/examples";
+// import ExamplesPage from "./pages/examples";
+import ExamplesPage from "./pages/examples_temp";
 import HomePage from "./pages/home";
 import HowToPage from "./pages/howto";
 import JavascriptPage from "./pages/javascript-page";
@@ -25,7 +26,7 @@ import {
   faYahoo,
   faPython,
   faJsSquare,
-  faReact
+  faReact,
 } from "@fortawesome/free-brands-svg-icons";
 import {
   faHome,
@@ -40,7 +41,7 @@ import {
   faHandshake,
   faTools,
   faFileWord,
-  faPalette
+  faPalette,
 } from "@fortawesome/free-solid-svg-icons";
 
 const homeIcon = <FontAwesomeIcon icon={faHome} />;
@@ -71,15 +72,15 @@ const mainData = {
       "about-us": {
         name: "about",
         page: <About />,
-        icon: aboutIcon
+        icon: aboutIcon,
       },
       "contact-us": {
         name: "contact",
         page: <ContactPage />,
-        icon: contactIcon
-      }
+        icon: contactIcon,
+      },
     },
-    index: <HomePage />
+    index: <HomePage />,
   },
 
   regex: {
@@ -89,45 +90,45 @@ const mainData = {
       basics: {
         name: "basics",
         page: <BasicsPage />,
-        icon: basicsIcon
+        icon: basicsIcon,
       },
       "how-to": {
         name: "how",
         page: <HowToPage />,
-        icon: howToIcon
+        icon: howToIcon,
       },
       "special-sequences": {
         name: "sequences",
         page: <Sequences />,
-        icon: specialSequencesIcon
+        icon: specialSequencesIcon,
       },
       examples: {
         name: "examples",
         page: <ExamplesPage />,
-        icon: examplesIcon
+        icon: examplesIcon,
       },
       re: {
         name: "re",
         page: <RePage />,
-        icon: "R"
+        icon: "R",
       },
       compile: {
         name: "compile",
         page: <CompilePage />,
-        icon: "C"
+        icon: "C",
       },
       pattern: {
         name: "pattern",
         page: <PatternPage />,
-        icon: "P"
+        icon: "P",
       },
       match: {
         name: "match",
         page: <MatchPage />,
-        icon: "M"
-      }
+        icon: "M",
+      },
     },
-    index: <RegexPage />
+    index: <RegexPage />,
   },
 
   meetup: {
@@ -137,15 +138,15 @@ const mainData = {
       TPSC: {
         name: "TPSC",
         page: <TPSCPage />,
-        icon: tpscIcon
+        icon: tpscIcon,
       },
       "Yahoo-Lodge": {
         name: "lodge",
         page: <YahooLodgePage />,
-        icon: yahooIcon
-      }
+        icon: yahooIcon,
+      },
     },
-    index: <MeetupPage />
+    index: <MeetupPage />,
   },
 
   comparisons: {
@@ -155,21 +156,21 @@ const mainData = {
       "python-and-javascript": {
         name: "javascript",
         page: <JavascriptPage />,
-        icon: javaScriptIcon
+        icon: javaScriptIcon,
       },
       react: {
         name: "react.js",
         page: <ReactPage />,
-        icon: reactIcon
+        icon: reactIcon,
       },
       "python-2-and-3": {
         name: "2vs3",
         page: <Python23Page />,
-        icon: pythonIcon
-      }
+        icon: pythonIcon,
+      },
     },
-    index: <ComparisonsPage />
-  }
+    index: <ComparisonsPage />,
+  },
 };
 
 export default mainData;
