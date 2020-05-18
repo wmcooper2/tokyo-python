@@ -66,7 +66,7 @@ const matchMethods = [
     name: "span",
     description: null,
     "basic-use": "match.span(group)",
-    "full-use": "mathc.span(group)",
+    "full-use": "match.span(group)",
     "return-value": null,
     examples: {},
   },

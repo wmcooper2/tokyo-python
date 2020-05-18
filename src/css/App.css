@@ -54,6 +54,7 @@ html {
   background-size: cover;
   /* I like this effect, can use when there is more content on the pages, for scrolling */
   background-attachment: fixed;
+  margin: 0;
 }
 
 body {
