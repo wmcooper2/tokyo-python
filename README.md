@@ -1,20 +1,17 @@
-# Title
-One line summary
+# Tokyo Python Website
+A website for Python in Tokyo.
 
-![screenshot if available]("image")
+![Screenshot]("screenshot.jpg")
 
 ## Purpose/Goal
-2 or 3 sentences
+Serves as a place for me to keep an abridged collection of notes on the official documentation. Also will act as a kind of bulletin board for Python related events in the Tokyo area.
 
-## Tech/Libraries Used	
-* one
-* two
+## Tech/Libraries Used
+* HTML
+* CSS
+* JavaScript
+* React
 
-
-## Things Learned	
-* one 
-* two
-
-## Problems/Solutions	
+## Problems/Solutions
 * paragraph one
 * paragraph two
