@@ -2,10 +2,9 @@ import React from "react";
 
 const EmailForm = () => {
   return (
-    // <div className="frosted-glass">
     <div>
       <form
-        action="https://tokyopython.com/send"
+        action="/send"
         method="post"
         enctype="application/x-www-form-urlencoded"
       >
