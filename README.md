@@ -13,7 +13,7 @@ Serves as a place for me to keep an abridged collection of notes on the official
 * React
 
 ## Problems/Solutions
-N/A
+* Using nested routing took a little reading in the documentation to figure out, but I got the top navlinks to act as the main routes and the sub-navlinks on the left to change and control what page is shown in the main area.
 
 ## More Information
 N/A
